@@ -1,0 +1,631 @@
+Official Case lid on 32bit
+Official Case lid off 32bit
+Aluminium Armour 32bit
+
+thomas@pi32:~/linux-5.4$ grep . result*  | grep -v WARNING
+result.1576676180:+ make -j 4 zImage
+result.1576676180:real	43m15.902s
+result.1576676180:user	145m1.034s
+result.1576676180:sys	21m22.244s
+result.1576676180:+ md5sum arch/arm/boot/zImage
+result.1576676180:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576678827:+ make -j 4 zImage
+result.1576678827:real	43m11.033s
+result.1576678827:user	145m7.049s
+result.1576678827:sys	21m20.669s
+result.1576678827:+ md5sum arch/arm/boot/zImage
+result.1576678827:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576681469:+ make -j 4 zImage
+result.1576681469:real	43m11.276s
+result.1576681469:user	145m10.207s
+result.1576681469:sys	21m20.873s
+result.1576681469:+ md5sum arch/arm/boot/zImage
+result.1576681469:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576684111:+ make -j 4 zImage
+result.1576684111:real	43m10.015s
+result.1576684111:user	145m4.650s
+result.1576684111:sys	21m20.537s
+result.1576684111:+ md5sum arch/arm/boot/zImage
+result.1576684111:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576686752:+ make -j 4 zImage
+result.1576686752:real	43m12.036s
+result.1576686752:user	145m8.181s
+result.1576686752:sys	21m24.434s
+result.1576686752:+ md5sum arch/arm/boot/zImage
+result.1576686752:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576689394:+ make -j 4 zImage
+result.1576689394:real	43m9.884s
+result.1576689394:user	145m2.522s
+result.1576689394:sys	21m23.338s
+result.1576689394:+ md5sum arch/arm/boot/zImage
+result.1576689394:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576692035:+ make -j 4 zImage
+result.1576692035:real	43m11.145s
+result.1576692035:user	145m5.637s
+result.1576692035:sys	21m22.480s
+result.1576692035:+ md5sum arch/arm/boot/zImage
+result.1576692035:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576694677:+ make -j 4 zImage
+result.1576694677:real	43m9.960s
+result.1576694677:user	145m4.249s
+result.1576694677:sys	21m22.364s
+result.1576694677:+ md5sum arch/arm/boot/zImage
+result.1576694677:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576697317:+ make -j 4 zImage
+result.1576697317:real	43m9.876s
+result.1576697317:user	145m0.355s
+result.1576697317:sys	21m23.847s
+result.1576697317:+ md5sum arch/arm/boot/zImage
+result.1576697317:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576699958:+ make -j 4 zImage
+result.1576699958:real	43m11.020s
+result.1576699958:user	145m7.977s
+result.1576699958:sys	21m22.115s
+result.1576699958:+ md5sum arch/arm/boot/zImage
+result.1576699958:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576711980:+ make -j 4 zImage
+result.1576711980:real	43m10.650s
+result.1576711980:user	145m0.659s
+result.1576711980:sys	21m23.855s
+result.1576711980:+ md5sum arch/arm/boot/zImage
+result.1576711980:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576714621:+ make -j 4 zImage
+result.1576714621:real	43m11.010s
+result.1576714621:user	144m59.946s
+result.1576714621:sys	21m26.427s
+result.1576714621:+ md5sum arch/arm/boot/zImage
+result.1576714621:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576717263:+ make -j 4 zImage
+result.1576717263:real	43m8.535s
+result.1576717263:user	144m56.026s
+result.1576717263:sys	21m22.949s
+result.1576717263:+ md5sum arch/arm/boot/zImage
+result.1576717263:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576719902:+ make -j 4 zImage
+result.1576719902:real	43m11.015s
+result.1576719902:user	145m5.638s
+result.1576719902:sys	21m18.798s
+result.1576719902:+ md5sum arch/arm/boot/zImage
+result.1576719902:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576722544:+ make -j 4 zImage
+result.1576722544:real	43m10.457s
+result.1576722544:user	145m6.099s
+result.1576722544:sys	21m23.248s
+result.1576722544:+ md5sum arch/arm/boot/zImage
+result.1576722544:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576725185:+ make -j 4 zImage
+result.1576725185:real	43m11.232s
+result.1576725185:user	144m58.881s
+result.1576725185:sys	21m25.360s
+result.1576725185:+ md5sum arch/arm/boot/zImage
+result.1576725185:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576727827:+ make -j 4 zImage
+result.1576727827:real	43m11.437s
+result.1576727827:user	144m58.483s
+result.1576727827:sys	21m25.411s
+result.1576727827:+ md5sum arch/arm/boot/zImage
+result.1576727827:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576730469:+ make -j 4 zImage
+result.1576730469:real	43m10.302s
+result.1576730469:user	145m4.616s
+result.1576730469:sys	21m20.327s
+result.1576730469:+ md5sum arch/arm/boot/zImage
+result.1576730469:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576733110:+ make -j 4 zImage
+result.1576733110:real	43m11.014s
+result.1576733110:user	145m0.896s
+result.1576733110:sys	21m24.004s
+result.1576733110:+ md5sum arch/arm/boot/zImage
+result.1576733110:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576735752:+ make -j 4 zImage
+result.1576735752:real	43m12.690s
+result.1576735752:user	144m58.405s
+result.1576735752:sys	21m25.136s
+result.1576735752:+ md5sum arch/arm/boot/zImage
+result.1576735752:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576746930:+ make -j 4 zImage
+result.1576746930:real	42m58.007s
+result.1576746930:user	143m59.001s
+result.1576746930:sys	21m3.607s
+result.1576746930:+ md5sum arch/arm/boot/zImage
+result.1576746930:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576749558:+ make -j 4 zImage
+result.1576749558:real	42m51.496s
+result.1576749558:user	144m7.021s
+result.1576749558:sys	21m5.407s
+result.1576749558:+ md5sum arch/arm/boot/zImage
+result.1576749558:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576752180:+ make -j 4 zImage
+result.1576752180:real	42m52.415s
+result.1576752180:user	144m0.635s
+result.1576752180:sys	21m12.373s
+result.1576752180:+ md5sum arch/arm/boot/zImage
+result.1576752180:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576754803:+ make -j 4 zImage
+result.1576754803:real	42m53.284s
+result.1576754803:user	144m4.936s
+result.1576754803:sys	21m8.954s
+result.1576754803:+ md5sum arch/arm/boot/zImage
+result.1576754803:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576757427:+ make -j 4 zImage
+result.1576757427:real	42m51.715s
+result.1576757427:user	144m4.961s
+result.1576757427:sys	21m7.758s
+result.1576757427:+ md5sum arch/arm/boot/zImage
+result.1576757427:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576760050:+ make -j 4 zImage
+result.1576760050:real	42m52.886s
+result.1576760050:user	144m6.501s
+result.1576760050:sys	21m4.324s
+result.1576760050:+ md5sum arch/arm/boot/zImage
+result.1576760050:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576762673:+ make -j 4 zImage
+result.1576762673:real	42m54.284s
+result.1576762673:user	144m3.636s
+result.1576762673:sys	21m7.988s
+result.1576762673:+ md5sum arch/arm/boot/zImage
+result.1576762673:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576765298:+ make -j 4 zImage
+result.1576765298:real	42m53.517s
+result.1576765298:user	144m0.774s
+result.1576765298:sys	21m15.370s
+result.1576765298:+ md5sum arch/arm/boot/zImage
+result.1576765298:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576767923:+ make -j 4 zImage
+result.1576767923:real	42m53.503s
+result.1576767923:user	144m15.741s
+result.1576767923:sys	21m3.448s
+result.1576767923:+ md5sum arch/arm/boot/zImage
+result.1576767923:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576770547:+ make -j 4 zImage
+result.1576770547:real	42m54.218s
+result.1576770547:user	144m11.529s
+result.1576770547:sys	21m2.926s
+result.1576770547:+ md5sum arch/arm/boot/zImage
+result.1576770547:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+thomas@pi32:~/linux-5.4$ 
+
+
+
+Aluminium Armour 64bit
+Official Case lid on 64bit
+Official Case lid off 64bit
+
+thomas@pi64:~/linux-5.4$ grep . result*  | grep -v WARNING
+result.1576676138:+ make -j 4 zImage
+result.1576676138:real	55m20.320s
+result.1576676138:user	194m4.628s
+result.1576676138:sys	20m57.383s
+result.1576676138:+ md5sum arch/arm/boot/zImage
+result.1576676138:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576679508:+ make -j 4 zImage
+result.1576679508:real	55m14.748s
+result.1576679508:user	194m15.879s
+result.1576679508:sys	20m58.050s
+result.1576679508:+ md5sum arch/arm/boot/zImage
+result.1576679508:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576682872:+ make -j 4 zImage
+result.1576682872:real	55m14.238s
+result.1576682872:user	194m14.147s
+result.1576682872:sys	20m56.877s
+result.1576682872:+ md5sum arch/arm/boot/zImage
+result.1576682872:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576686235:+ make -j 4 zImage
+result.1576686235:real	55m14.703s
+result.1576686235:user	194m13.546s
+result.1576686235:sys	21m0.349s
+result.1576686235:+ md5sum arch/arm/boot/zImage
+result.1576686235:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576689599:+ make -j 4 zImage
+result.1576689599:real	55m13.228s
+result.1576689599:user	194m11.203s
+result.1576689599:sys	20m57.700s
+result.1576689599:+ md5sum arch/arm/boot/zImage
+result.1576689599:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576692962:+ make -j 4 zImage
+result.1576692962:real	55m13.075s
+result.1576692962:user	194m7.942s
+result.1576692962:sys	20m56.492s
+result.1576692962:+ md5sum arch/arm/boot/zImage
+result.1576692962:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576696324:+ make -j 4 zImage
+result.1576696324:real	55m13.987s
+result.1576696324:user	194m12.966s
+result.1576696324:sys	20m57.755s
+result.1576696324:+ md5sum arch/arm/boot/zImage
+result.1576696324:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576699687:+ make -j 4 zImage
+result.1576699687:real	55m12.207s
+result.1576699687:user	194m13.242s
+result.1576699687:sys	20m53.382s
+result.1576699687:+ md5sum arch/arm/boot/zImage
+result.1576699687:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576703048:+ make -j 4 zImage
+result.1576703048:real	55m14.170s
+result.1576703048:user	194m14.121s
+result.1576703048:sys	20m57.304s
+result.1576703048:+ md5sum arch/arm/boot/zImage
+result.1576703048:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576706412:+ make -j 4 zImage
+result.1576706412:real	55m14.642s
+result.1576706412:user	194m13.530s
+result.1576706412:sys	20m59.982s
+result.1576706412:+ md5sum arch/arm/boot/zImage
+result.1576706412:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576735707:+ make -j 4 zImage
+result.1576735707:real	56m0.639s
+result.1576735707:user	196m2.511s
+result.1576735707:sys	21m22.484s
+result.1576735707:+ md5sum arch/arm/boot/zImage
+result.1576735707:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576739117:+ make -j 4 zImage
+result.1576739117:real	55m50.670s
+result.1576739117:user	196m11.166s
+result.1576739117:sys	21m23.480s
+result.1576739117:+ md5sum arch/arm/boot/zImage
+result.1576739117:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576742517:+ make -j 4 zImage
+result.1576742517:real	55m50.138s
+result.1576742517:user	196m7.029s
+result.1576742517:sys	21m23.564s
+result.1576742517:+ md5sum arch/arm/boot/zImage
+result.1576742517:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576745917:+ make -j 4 zImage
+result.1576745917:real	55m47.318s
+result.1576745917:user	196m1.897s
+result.1576745917:sys	21m22.087s
+result.1576745917:+ md5sum arch/arm/boot/zImage
+result.1576745917:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576749314:+ make -j 4 zImage
+result.1576749314:real	55m49.335s
+result.1576749314:user	196m0.830s
+result.1576749314:sys	21m25.941s
+result.1576749314:+ md5sum arch/arm/boot/zImage
+result.1576749314:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576752713:+ make -j 4 zImage
+result.1576752713:real	55m50.565s
+result.1576752713:user	196m8.358s
+result.1576752713:sys	21m24.476s
+result.1576752713:+ md5sum arch/arm/boot/zImage
+result.1576752713:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576756113:+ make -j 4 zImage
+result.1576756113:real	55m50.333s
+result.1576756113:user	196m8.172s
+result.1576756113:sys	21m24.194s
+result.1576756113:+ md5sum arch/arm/boot/zImage
+result.1576756113:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576759512:+ make -j 4 zImage
+result.1576759512:real	55m38.820s
+result.1576759512:user	195m35.078s
+result.1576759512:sys	21m15.504s
+result.1576759512:+ md5sum arch/arm/boot/zImage
+result.1576759512:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576762901:+ make -j 4 zImage
+result.1576762901:real	55m10.400s
+result.1576762901:user	194m7.993s
+result.1576762901:sys	20m51.097s
+result.1576762901:+ md5sum arch/arm/boot/zImage
+result.1576762901:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576766260:+ make -j 4 zImage
+result.1576766260:real	55m7.593s
+result.1576766260:user	193m55.571s
+result.1576766260:sys	20m50.825s
+result.1576766260:+ md5sum arch/arm/boot/zImage
+result.1576766260:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576988478:+ make -j 4 zImage
+result.1576988478:real	55m9.495s
+result.1576988478:user	193m59.779s
+result.1576988478:sys	20m52.922s
+result.1576988478:+ md5sum arch/arm/boot/zImage
+result.1576988478:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576991837:+ make -j 4 zImage
+result.1576991837:real	55m10.977s
+result.1576991837:user	194m1.727s
+result.1576991837:sys	20m53.634s
+result.1576991837:+ md5sum arch/arm/boot/zImage
+result.1576991837:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576995197:+ make -j 4 zImage
+result.1576995197:real	55m10.736s
+result.1576995197:user	194m1.171s
+result.1576995197:sys	20m51.589s
+result.1576995197:+ md5sum arch/arm/boot/zImage
+result.1576995197:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1576998557:+ make -j 4 zImage
+result.1576998557:real	55m7.511s
+result.1576998557:user	193m55.826s
+result.1576998557:sys	20m51.579s
+result.1576998557:+ md5sum arch/arm/boot/zImage
+result.1576998557:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1577001914:+ make -j 4 zImage
+result.1577001914:real	55m9.524s
+result.1577001914:user	194m2.258s
+result.1577001914:sys	20m51.057s
+result.1577001914:+ md5sum arch/arm/boot/zImage
+result.1577001914:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1577005272:+ make -j 4 zImage
+result.1577005272:real	55m9.841s
+result.1577005272:user	194m2.271s
+result.1577005272:sys	20m51.507s
+result.1577005272:+ md5sum arch/arm/boot/zImage
+result.1577005272:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1577008631:+ make -j 4 zImage
+result.1577008631:real	55m11.216s
+result.1577008631:user	194m2.019s
+result.1577008631:sys	20m54.608s
+result.1577008631:+ md5sum arch/arm/boot/zImage
+result.1577008631:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1577011992:+ make -j 4 zImage
+result.1577011992:real	55m10.617s
+result.1577011992:user	193m58.394s
+result.1577011992:sys	20m53.126s
+result.1577011992:+ md5sum arch/arm/boot/zImage
+result.1577011992:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1577015351:+ make -j 4 zImage
+result.1577015351:real	55m11.259s
+result.1577015351:user	194m2.506s
+result.1577015351:sys	20m55.041s
+result.1577015351:+ md5sum arch/arm/boot/zImage
+result.1577015351:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1577018712:+ make -j 4 zImage
+result.1577018712:real	55m11.089s
+result.1577018712:user	194m4.884s
+result.1577018712:sys	20m51.770s
+result.1577018712:+ md5sum arch/arm/boot/zImage
+result.1577018712:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+thomas@pi64:~/linux-5.4$ 
+
+
+
+ICE-Tower Raspberry Pi 4 CPU Cooler without fan 64bit
+ICE-Tower Raspberry Pi 4 CPU Cooler with fan 64bit
+
+thomas@pi64:~/linux-5.4$ grep . result*  | grep -v WARNING
+result.1578046371:+ make -j 4 zImage
+result.1578046371:real	56m4.270s
+result.1578046371:user	196m40.160s
+result.1578046371:sys	21m17.040s
+result.1578046371:+ md5sum arch/arm/boot/zImage
+result.1578046371:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578049784:+ make -j 4 zImage
+result.1578049784:real	55m57.949s
+result.1578049784:user	196m45.707s
+result.1578049784:sys	21m17.465s
+result.1578049784:+ md5sum arch/arm/boot/zImage
+result.1578049784:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578053191:+ make -j 4 zImage
+result.1578053191:real	56m0.231s
+result.1578053191:user	196m57.588s
+result.1578053191:sys	21m15.910s
+result.1578053191:+ md5sum arch/arm/boot/zImage
+result.1578053191:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578056600:+ make -j 4 zImage
+result.1578056600:real	55m57.002s
+result.1578056600:user	196m44.434s
+result.1578056600:sys	21m17.684s
+result.1578056600:+ md5sum arch/arm/boot/zImage
+result.1578056600:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578060007:+ make -j 4 zImage
+result.1578060007:real	55m56.020s
+result.1578060007:user	196m41.076s
+result.1578060007:sys	21m14.627s
+result.1578060007:+ md5sum arch/arm/boot/zImage
+result.1578060007:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578063412:+ make -j 4 zImage
+result.1578063412:real	55m58.625s
+result.1578063412:user	196m52.459s
+result.1578063412:sys	21m15.667s
+result.1578063412:+ md5sum arch/arm/boot/zImage
+result.1578063412:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578066820:+ make -j 4 zImage
+result.1578066820:real	55m59.630s
+result.1578066820:user	196m49.510s
+result.1578066820:sys	21m17.888s
+result.1578066820:+ md5sum arch/arm/boot/zImage
+result.1578066820:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578070229:+ make -j 4 zImage
+result.1578070229:real	55m57.875s
+result.1578070229:user	196m51.398s
+result.1578070229:sys	21m14.100s
+result.1578070229:+ md5sum arch/arm/boot/zImage
+result.1578070229:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578073636:+ make -j 4 zImage
+result.1578073636:real	55m56.967s
+result.1578073636:user	196m44.538s
+result.1578073636:sys	21m17.652s
+result.1578073636:+ md5sum arch/arm/boot/zImage
+result.1578073636:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578077043:+ make -j 4 zImage
+result.1578077043:real	55m59.537s
+result.1578077043:user	196m52.751s
+result.1578077043:sys	21m17.401s
+result.1578077043:+ md5sum arch/arm/boot/zImage
+result.1578077043:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578301912:+ make -j 4 zImage
+result.1578301912:real	55m58.401s
+result.1578301912:user	196m50.193s
+result.1578301912:sys	21m18.290s
+result.1578301912:+ md5sum arch/arm/boot/zImage
+result.1578301912:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578305320:+ make -j 4 zImage
+result.1578305320:real	56m0.375s
+result.1578305320:user	196m48.922s
+result.1578305320:sys	21m21.053s
+result.1578305320:+ md5sum arch/arm/boot/zImage
+result.1578305320:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578308729:+ make -j 4 zImage
+result.1578308729:real	56m0.491s
+result.1578308729:user	196m51.768s
+result.1578308729:sys	21m19.083s
+result.1578308729:+ md5sum arch/arm/boot/zImage
+result.1578308729:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578312139:+ make -j 4 zImage
+result.1578312139:real	56m0.442s
+result.1578312139:user	196m56.675s
+result.1578312139:sys	21m18.598s
+result.1578312139:+ md5sum arch/arm/boot/zImage
+result.1578312139:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578315549:+ make -j 4 zImage
+result.1578315549:real	55m59.485s
+result.1578315549:user	196m55.191s
+result.1578315549:sys	21m15.197s
+result.1578315549:+ md5sum arch/arm/boot/zImage
+result.1578315549:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578318958:+ make -j 4 zImage
+result.1578318958:real	55m57.220s
+result.1578318958:user	196m45.906s
+result.1578318958:sys	21m17.346s
+result.1578318958:+ md5sum arch/arm/boot/zImage
+result.1578318958:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578322364:+ make -j 4 zImage
+result.1578322364:real	55m59.149s
+result.1578322364:user	196m53.193s
+result.1578322364:sys	21m17.676s
+result.1578322364:+ md5sum arch/arm/boot/zImage
+result.1578322364:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578325773:+ make -j 4 zImage
+result.1578325773:real	56m0.650s
+result.1578325773:user	196m57.327s
+result.1578325773:sys	21m20.122s
+result.1578325773:+ md5sum arch/arm/boot/zImage
+result.1578325773:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578329183:+ make -j 4 zImage
+result.1578329183:real	55m59.686s
+result.1578329183:user	196m54.644s
+result.1578329183:sys	21m16.155s
+result.1578329183:+ md5sum arch/arm/boot/zImage
+result.1578329183:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578332591:+ make -j 4 zImage
+result.1578332591:real	55m58.864s
+result.1578332591:user	196m50.016s
+result.1578332591:sys	21m20.853s
+result.1578332591:+ md5sum arch/arm/boot/zImage
+result.1578332591:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+thomas@pi64:~/linux-5.4$ 
+
+
+
+ICE-Tower Raspberry Pi 4 CPU Cooler without fan 32bit
+ICE-Tower Raspberry Pi 4 CPU Cooler with fan 32bit
+
+thomas@pi32:~/linux-5.4$ grep . result*  | grep -v WARNING
+result.1578411497:+ make -j 4 zImage
+result.1578411497:real	42m58.964s
+result.1578411497:user	143m56.063s
+result.1578411497:sys	21m9.502s
+result.1578411497:+ md5sum arch/arm/boot/zImage
+result.1578411497:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578414127:+ make -j 4 zImage
+result.1578414127:real	42m54.885s
+result.1578414127:user	144m6.212s
+result.1578414127:sys	21m12.381s
+result.1578414127:+ md5sum arch/arm/boot/zImage
+result.1578414127:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578416753:+ make -j 4 zImage
+result.1578416753:real	42m52.355s
+result.1578416753:user	144m8.155s
+result.1578416753:sys	21m6.081s
+result.1578416753:+ md5sum arch/arm/boot/zImage
+result.1578416753:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578419376:+ make -j 4 zImage
+result.1578419376:real	42m50.546s
+result.1578419376:user	144m4.188s
+result.1578419376:sys	21m8.606s
+result.1578419376:+ md5sum arch/arm/boot/zImage
+result.1578419376:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578421997:+ make -j 4 zImage
+result.1578421997:real	42m51.672s
+result.1578421997:user	144m1.733s
+result.1578421997:sys	21m9.599s
+result.1578421997:+ md5sum arch/arm/boot/zImage
+result.1578421997:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578424620:+ make -j 4 zImage
+result.1578424620:real	42m51.357s
+result.1578424620:user	143m57.864s
+result.1578424620:sys	21m14.445s
+result.1578424620:+ md5sum arch/arm/boot/zImage
+result.1578424620:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578427241:+ make -j 4 zImage
+result.1578427241:real	42m50.118s
+result.1578427241:user	144m3.534s
+result.1578427241:sys	21m2.660s
+result.1578427241:+ md5sum arch/arm/boot/zImage
+result.1578427241:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578429862:+ make -j 4 zImage
+result.1578429862:real	42m51.581s
+result.1578429862:user	144m3.851s
+result.1578429862:sys	21m7.119s
+result.1578429862:+ md5sum arch/arm/boot/zImage
+result.1578429862:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578432484:+ make -j 4 zImage
+result.1578432484:real	42m53.007s
+result.1578432484:user	144m3.254s
+result.1578432484:sys	21m8.954s
+result.1578432484:+ md5sum arch/arm/boot/zImage
+result.1578432484:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578435108:+ make -j 4 zImage
+result.1578435108:real	42m52.555s
+result.1578435108:user	144m9.541s
+result.1578435108:sys	21m6.690s
+result.1578435108:+ md5sum arch/arm/boot/zImage
+result.1578435108:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578477652:+ make -j 4 zImage
+result.1578477652:real	42m53.549s
+result.1578477652:user	144m3.607s
+result.1578477652:sys	21m12.095s
+result.1578477652:+ md5sum arch/arm/boot/zImage
+result.1578477652:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578480276:+ make -j 4 zImage
+result.1578480276:real	42m53.206s
+result.1578480276:user	144m4.620s
+result.1578480276:sys	21m12.702s
+result.1578480276:+ md5sum arch/arm/boot/zImage
+result.1578480276:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578482900:+ make -j 4 zImage
+result.1578482900:real	42m53.854s
+result.1578482900:user	144m1.125s
+result.1578482900:sys	21m14.134s
+result.1578482900:+ md5sum arch/arm/boot/zImage
+result.1578482900:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578485525:+ make -j 4 zImage
+result.1578485525:real	42m54.902s
+result.1578485525:user	144m8.879s
+result.1578485525:sys	21m7.961s
+result.1578485525:+ md5sum arch/arm/boot/zImage
+result.1578485525:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578488150:+ make -j 4 zImage
+result.1578488150:real	42m53.677s
+result.1578488150:user	144m3.251s
+result.1578488150:sys	21m13.013s
+result.1578488150:+ md5sum arch/arm/boot/zImage
+result.1578488150:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578490775:+ make -j 4 zImage
+result.1578490775:real	42m53.016s
+result.1578490775:user	144m8.649s
+result.1578490775:sys	21m10.150s
+result.1578490775:+ md5sum arch/arm/boot/zImage
+result.1578490775:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578493399:+ make -j 4 zImage
+result.1578493399:real	42m53.346s
+result.1578493399:user	144m6.540s
+result.1578493399:sys	21m11.302s
+result.1578493399:+ md5sum arch/arm/boot/zImage
+result.1578493399:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578496023:+ make -j 4 zImage
+result.1578496023:real	42m54.208s
+result.1578496023:user	144m1.574s
+result.1578496023:sys	21m17.574s
+result.1578496023:+ md5sum arch/arm/boot/zImage
+result.1578496023:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578498647:+ make -j 4 zImage
+result.1578498647:real	42m55.307s
+result.1578498647:user	144m1.985s
+result.1578498647:sys	21m14.618s
+result.1578498647:+ md5sum arch/arm/boot/zImage
+result.1578498647:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+result.1578501273:+ make -j 4 zImage
+result.1578501273:real	42m55.457s
+result.1578501273:user	144m4.176s
+result.1578501273:sys	21m13.635s
+result.1578501273:+ md5sum arch/arm/boot/zImage
+result.1578501273:173910c822d8c9271a0fed5bede73c39  arch/arm/boot/zImage
+thomas@pi32:~/linux-5.4$

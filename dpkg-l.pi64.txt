@@ -1,0 +1,385 @@
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                 Version                     Architecture Description
++++-====================================-===========================-============-===============================================================================
+ii  adduser                              3.118                       all          add and remove users and groups
+ii  adwaita-icon-theme                   3.30.1-1                    all          default icon theme of GNOME
+ii  apt                                  1.8.2                       arm64        commandline package manager
+ii  apt-utils                            1.8.2                       arm64        package management related utility programs
+ii  aptitude                             0.8.11-7                    arm64        terminal-based package manager
+ii  aptitude-common                      0.8.11-7                    all          architecture independent files for the aptitude package manager
+ii  base-files                           10.3+deb10u2                arm64        Debian base system miscellaneous files
+ii  base-passwd                          3.5.46                      arm64        Debian base system master password and group files
+ii  bash                                 5.0-4                       arm64        GNU Bourne Again SHell
+ii  bc                                   1.07.1-2+b1                 arm64        GNU bc arbitrary precision calculator language
+ii  bind9-host                           1:9.11.5.P4+dfsg-5.1        arm64        DNS lookup utility (deprecated)
+ii  binutils                             2.33.1-6                    arm64        GNU assembler, linker and binary utilities
+ii  binutils-aarch64-linux-gnu           2.33.1-6                    arm64        GNU binary utilities, for aarch64-linux-gnu target
+ii  binutils-arm-linux-gnueabihf         2.33.1-6                    arm64        GNU binary utilities, for arm-linux-gnueabihf target
+ii  binutils-common:arm64                2.33.1-6                    arm64        Common files for the GNU assembler, linker and binary utilities
+ii  bison                                2:3.3.2.dfsg-1              arm64        YACC-compatible parser generator
+ii  bsdmainutils                         11.1.2+b1                   arm64        collection of more utilities from FreeBSD
+ii  bsdutils                             1:2.33.1-0.1                arm64        basic utilities from 4.4BSD-Lite
+ii  build-essential                      12.6                        arm64        Informational list of build-essential packages
+ii  bzip2                                1.0.6-9.2~deb10u1           arm64        high-quality block-sorting file compressor - utilities
+ii  ca-certificates                      20190110                    all          Common CA certificates
+ii  coreutils                            8.30-3                      arm64        GNU core utilities
+ii  cpio                                 2.12+dfsg-9                 arm64        GNU cpio -- a program to manage archives of files
+ii  cpp                                  4:9.2.1-3.1                 arm64        GNU C preprocessor (cpp)
+ii  cpp-8                                8.3.0-6                     arm64        GNU C preprocessor
+ii  cpp-9                                9.2.1-21                    arm64        GNU C preprocessor
+ii  cpp-9-arm-linux-gnueabihf            9.2.1-21cross1              arm64        GNU C preprocessor
+ii  cpp-arm-linux-gnueabihf              4:9.2.1-3.1                 arm64        GNU C preprocessor (cpp) for the armhf architecture
+ii  cron                                 3.0pl1-134+deb10u1          arm64        process scheduling daemon
+ii  curl                                 7.64.0-4                    arm64        command line tool for transferring data with URL syntax
+ii  dash                                 0.5.10.2-5                  arm64        POSIX-compliant shell
+ii  debconf                              1.5.71                      all          Debian configuration management system
+ii  debconf-i18n                         1.5.71                      all          full internationalization support for debconf
+ii  debconf-utils                        1.5.71                      all          debconf utilities
+ii  debian-archive-keyring               2019.1                      all          GnuPG archive keys of the Debian archive
+ii  debianutils                          4.8.6.1                     arm64        Miscellaneous utilities specific to Debian
+ii  diffutils                            1:3.7-3                     arm64        File comparison utilities
+ii  dmidecode                            3.2-1                       arm64        SMBIOS/DMI table decoder
+ii  dmsetup                              2:1.02.155-3                arm64        Linux Kernel Device Mapper userspace library
+ii  dnsutils                             1:9.11.5.P4+dfsg-5.1        arm64        Clients provided with BIND
+ii  dpkg                                 1.19.7                      arm64        Debian package management system
+ii  dpkg-dev                             1.19.7                      all          Debian package development tools
+ii  e2fsprogs                            1.44.5-1+deb10u2            arm64        ext2/ext3/ext4 file system utilities
+ii  fake-hwclock                         0.11                        all          Save/restore system clock on machines without working RTC hardware
+ii  fdisk                                2.33.1-0.1                  arm64        collection of partitioning utilities
+ii  file                                 1:5.35-4+deb10u1            arm64        Recognize the type of data in a file using "magic" numbers
+ii  findutils                            4.6.0+git+20190209-2        arm64        utilities for finding files--find, xargs
+ii  flex                                 2.6.4-6.2                   arm64        fast lexical analyzer generator
+ii  fontconfig                           2.13.1-2                    arm64        generic font configuration library - support binaries
+ii  fontconfig-config                    2.13.1-2                    all          generic font configuration library - configuration
+ii  fonts-dejavu-core                    2.37-1                      all          Vera font family derivate with additional characters
+ii  g++                                  4:9.2.1-3.1                 arm64        GNU C++ compiler
+ii  g++-8                                8.3.0-6                     arm64        GNU C++ compiler
+ii  g++-9                                9.2.1-21                    arm64        GNU C++ compiler
+ii  gcc                                  4:9.2.1-3.1                 arm64        GNU C compiler
+ii  gcc-8                                8.3.0-6                     arm64        GNU C compiler
+ii  gcc-8-base:arm64                     8.3.0-6                     arm64        GCC, the GNU Compiler Collection (base package)
+ii  gcc-9                                9.2.1-21                    arm64        GNU C compiler
+ii  gcc-9-arm-linux-gnueabihf            9.2.1-21cross1              arm64        GNU C compiler (cross compiler for armhf architecture)
+ii  gcc-9-arm-linux-gnueabihf-base:arm64 9.2.1-21cross1              arm64        GCC, the GNU Compiler Collection (base package)
+ii  gcc-9-base:arm64                     9.2.1-21                    arm64        GCC, the GNU Compiler Collection (base package)
+ii  gcc-9-cross-base                     9.2.1-21cross1              all          GCC, the GNU Compiler Collection (library base package)
+ii  gcc-arm-linux-gnueabihf              4:9.2.1-3.1                 arm64        GNU C compiler for the armhf architecture
+ii  gdbm-l10n                            1.18.1-4                    all          GNU dbm database routines (translation files) 
+ii  git                                  1:2.20.1-2                  arm64        fast, scalable, distributed revision control system
+ii  git-man                              1:2.20.1-2                  all          fast, scalable, distributed revision control system (manual pages)
+ii  gpgv                                 2.2.12-1+deb10u1            arm64        GNU privacy guard - signature verification tool
+ii  grep                                 3.3-1                       arm64        GNU grep, egrep and fgrep
+ii  gtk-update-icon-cache                3.24.5-1                    arm64        icon theme caching utility
+ii  gzip                                 1.9-3                       arm64        GNU compression utilities
+ii  hicolor-icon-theme                   0.17-2                      all          default fallback theme for FreeDesktop.org icon themes
+ii  hostname                             3.21                        arm64        utility to set/show the host name or domain name
+ii  ifupdown                             0.8.35                      arm64        high level tools to configure network interfaces
+ii  init                                 1.56+nmu1                   arm64        metapackage ensuring an init system is installed
+ii  init-system-helpers                  1.56+nmu1                   all          helper tools for all init systems
+ii  iproute2                             4.20.0-2                    arm64        networking and traffic control tools
+ii  iptables                             1.8.2-4                     arm64        administration tools for packet filtering and NAT
+ii  iputils-ping                         3:20180629-2                arm64        Tools to test the reachability of network hosts
+ii  isc-dhcp-client                      4.4.1-2                     arm64        DHCP client for automatically obtaining an IP address
+ii  isc-dhcp-common                      4.4.1-2                     arm64        common manpages relevant to all of the isc-dhcp packages
+ii  kmod                                 26-1                        arm64        tools for managing Linux kernel modules
+ii  less                                 487-0.1+b1                  arm64        pager program similar to more
+ii  libacl1:arm64                        2.2.53-4                    arm64        access control list - shared library
+ii  libapparmor1:arm64                   2.13.2-10                   arm64        changehat AppArmor library
+ii  libapt-inst2.0:arm64                 1.8.2                       arm64        deb package format runtime library
+ii  libapt-pkg5.0:arm64                  1.8.2                       arm64        package management runtime library
+ii  libargon2-1:arm64                    0~20171227-0.2              arm64        memory-hard hashing function - runtime library
+ii  libasan5:arm64                       9.2.1-21                    arm64        AddressSanitizer -- a fast memory error detector
+ii  libasan5-armhf-cross                 9.2.1-21cross1              all          AddressSanitizer -- a fast memory error detector
+ii  libatk1.0-0:arm64                    2.30.0-2                    arm64        ATK accessibility toolkit
+ii  libatk1.0-data                       2.30.0-2                    all          Common files for the ATK accessibility toolkit
+ii  libatomic1:arm64                     9.2.1-21                    arm64        support library providing __atomic built-in functions
+ii  libatomic1-armhf-cross               9.2.1-21cross1              all          support library providing __atomic built-in functions
+ii  libattr1:arm64                       1:2.4.48-4                  arm64        extended attribute handling - shared library
+ii  libaudit-common                      1:2.8.4-3                   all          Dynamic library for security auditing - common files
+ii  libaudit1:arm64                      1:2.8.4-3                   arm64        Dynamic library for security auditing
+ii  libavahi-client3:arm64               0.7-4+b1                    arm64        Avahi client library
+ii  libavahi-common-data:arm64           0.7-4+b1                    arm64        Avahi common data files
+ii  libavahi-common3:arm64               0.7-4+b1                    arm64        Avahi common library
+ii  libbind9-161:arm64                   1:9.11.5.P4+dfsg-5.1        arm64        BIND9 Shared Library used by BIND
+ii  libbinutils:arm64                    2.33.1-6                    arm64        GNU binary utilities (private shared library)
+ii  libbison-dev:arm64                   2:3.3.2.dfsg-1              arm64        YACC-compatible parser generator - development library
+ii  libblkid1:arm64                      2.33.1-0.1                  arm64        block device ID library
+ii  libboost-iostreams1.67.0:arm64       1.67.0-13                   arm64        Boost.Iostreams Library
+ii  libboost-system1.67.0:arm64          1.67.0-13                   arm64        Operating system (e.g. diagnostics support) library
+ii  libbsd0:arm64                        0.9.1-2                     arm64        utility functions from BSD systems - shared library
+ii  libbz2-1.0:arm64                     1.0.6-9.2~deb10u1           arm64        high-quality block-sorting file compressor library - runtime
+ii  libc-bin                             2.28-10                     arm64        GNU C Library: Binaries
+ii  libc-dev-bin                         2.28-10                     arm64        GNU C Library: Development binaries
+ii  libc-l10n                            2.28-10                     all          GNU C Library: localization files
+ii  libc6:arm64                          2.28-10                     arm64        GNU C Library: Shared libraries
+ii  libc6-armhf-cross                    2.29-1cross7                all          GNU C Library: Shared libraries (for cross-compiling)
+ii  libc6-dev:arm64                      2.28-10                     arm64        GNU C Library: Development Libraries and Header Files
+ii  libc6-dev-armhf-cross                2.29-1cross7                all          GNU C Library: Development Libraries and Header Files (for cross-compiling)
+ii  libcairo2:arm64                      1.16.0-4                    arm64        Cairo 2D vector graphics library
+ii  libcap-ng0:arm64                     0.7.9-2                     arm64        An alternate POSIX capabilities library
+ii  libcap2:arm64                        1:2.25-2                    arm64        POSIX 1003.1e capabilities (library)
+ii  libcap2-bin                          1:2.25-2                    arm64        POSIX 1003.1e capabilities (utilities)
+ii  libcc1-0:arm64                       9.2.1-21                    arm64        GCC cc1 plugin for GDB
+ii  libcom-err2:arm64                    1.44.5-1+deb10u2            arm64        common error description library
+ii  libcroco3:arm64                      0.6.12-3                    arm64        Cascading Style Sheet (CSS) parsing and manipulation toolkit
+ii  libcryptsetup12:arm64                2:2.1.0-5+deb10u2           arm64        disk encryption support - shared library
+ii  libcups2:arm64                       2.2.10-6+deb10u1            arm64        Common UNIX Printing System(tm) - Core library
+ii  libcurl3-gnutls:arm64                7.64.0-4                    arm64        easy-to-use client-side URL transfer library (GnuTLS flavour)
+ii  libcurl4:arm64                       7.64.0-4                    arm64        easy-to-use client-side URL transfer library (OpenSSL flavour)
+ii  libcwidget3v5:arm64                  0.5.17-11                   arm64        high-level terminal interface library for C++ (runtime files)
+ii  libdatrie1:arm64                     0.2.12-2                    arm64        Double-array trie library
+ii  libdb5.3:arm64                       5.3.28+dfsg1-0.5            arm64        Berkeley v5.3 Database Libraries [runtime]
+ii  libdbus-1-3:arm64                    1.12.16-1                   arm64        simple interprocess messaging system (library)
+ii  libdebconfclient0:arm64              0.249                       arm64        Debian Configuration Management System (C-implementation library)
+ii  libdevmapper1.02.1:arm64             2:1.02.155-3                arm64        Linux Kernel Device Mapper userspace library
+ii  libdns-export1104                    1:9.11.5.P4+dfsg-5.1        arm64        Exported DNS Shared Library
+ii  libdns1104:arm64                     1:9.11.5.P4+dfsg-5.1        arm64        DNS Shared Library used by BIND
+ii  libdpkg-perl                         1.19.7                      all          Dpkg perl modules
+ii  libedit2:arm64                       3.1-20181209-1              arm64        BSD editline and history libraries
+ii  libelf1:arm64                        0.176-1.1                   arm64        library to read and write ELF files
+ii  liberror-perl                        0.17027-2                   all          Perl module for error/exception handling in an OO-ish way
+ii  libestr0:arm64                       0.1.10-2.1                  arm64        Helper functions for handling strings (lib)
+ii  libexpat1:arm64                      2.2.6-2+deb10u1             arm64        XML parsing C library - runtime library
+ii  libext2fs2:arm64                     1.44.5-1+deb10u2            arm64        ext2/ext3/ext4 file system libraries
+ii  libfastjson4:arm64                   0.99.8-2                    arm64        fast json library for C
+ii  libfdisk1:arm64                      2.33.1-0.1                  arm64        fdisk partitioning library
+ii  libffi6:arm64                        3.2.1-9                     arm64        Foreign Function Interface library runtime
+ii  libfontconfig1:arm64                 2.13.1-2                    arm64        generic font configuration library - runtime
+ii  libfreetype6:arm64                   2.9.1-3+deb10u1             arm64        FreeType 2 font engine, shared library files
+ii  libfribidi0:arm64                    1.0.5-3.1+deb10u1           arm64        Free Implementation of the Unicode BiDi algorithm
+ii  libfstrm0:arm64                      0.4.0-1                     arm64        Frame Streams (fstrm) library
+ii  libgcc-8-dev:arm64                   8.3.0-6                     arm64        GCC support library (development files)
+ii  libgcc-9-dev:arm64                   9.2.1-21                    arm64        GCC support library (development files)
+ii  libgcc-9-dev-armhf-cross             9.2.1-21cross1              all          GCC support library (development files)
+ii  libgcc1:arm64                        1:9.2.1-21                  arm64        GCC support library
+ii  libgcc1-armhf-cross                  1:9.2.1-21cross1            all          GCC support library (armhf)
+ii  libgcrypt20:arm64                    1.8.4-5                     arm64        LGPL Crypto library - runtime library
+ii  libgdbm-compat4:arm64                1.18.1-4                    arm64        GNU dbm database routines (legacy support runtime version) 
+ii  libgdbm6:arm64                       1.18.1-4                    arm64        GNU dbm database routines (runtime version) 
+ii  libgdk-pixbuf2.0-0:arm64             2.38.1+dfsg-1               arm64        GDK Pixbuf library
+ii  libgdk-pixbuf2.0-common              2.38.1+dfsg-1               all          GDK Pixbuf library - data files
+ii  libgeoip1:arm64                      1.6.12-1                    arm64        non-DNS IP-to-country resolver library
+ii  libglib2.0-0:arm64                   2.58.3-2+deb10u2            arm64        GLib library of C routines
+ii  libgmp10:arm64                       2:6.1.2+dfsg-4              arm64        Multiprecision arithmetic library
+ii  libgnutls30:arm64                    3.6.7-4                     arm64        GNU TLS library - main runtime library
+ii  libgomp1:arm64                       9.2.1-21                    arm64        GCC OpenMP (GOMP) support library
+ii  libgomp1-armhf-cross                 9.2.1-21cross1              all          GCC OpenMP (GOMP) support library
+ii  libgpg-error0:arm64                  1.35-1                      arm64        GnuPG development runtime library
+ii  libgpm2:arm64                        1.20.7-5                    arm64        General Purpose Mouse - shared library
+ii  libgraphite2-3:arm64                 1.3.13-7                    arm64        Font rendering engine for Complex Scripts -- library
+ii  libgssapi-krb5-2:arm64               1.17-3                      arm64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ii  libgtk2.0-0:arm64                    2.24.32-3                   arm64        GTK+ graphical user interface library
+ii  libgtk2.0-common                     2.24.32-3                   all          common files for the GTK+ graphical user interface library
+ii  libharfbuzz0b:arm64                  2.3.1-1                     arm64        OpenType text shaping engine (shared library)
+ii  libhogweed4:arm64                    3.4.1-1                     arm64        low level cryptographic library (public-key cryptos)
+ii  libice6:arm64                        2:1.0.9-2                   arm64        X11 Inter-Client Exchange library
+ii  libicu63:arm64                       63.1-6                      arm64        International Components for Unicode
+ii  libidn11:arm64                       1.33-2.2                    arm64        GNU Libidn library, implementation of IETF IDN specifications
+ii  libidn2-0:arm64                      2.0.5-1                     arm64        Internationalized domain names (IDNA2008/TR46) library
+ii  libip4tc0:arm64                      1.8.2-4                     arm64        netfilter libip4tc library
+ii  libip6tc0:arm64                      1.8.2-4                     arm64        netfilter libip6tc library
+ii  libiptc0:arm64                       1.8.2-4                     arm64        netfilter libiptc library
+ii  libirs161:arm64                      1:9.11.5.P4+dfsg-5.1        arm64        DNS Shared Library used by BIND
+ii  libisc-export1100:arm64              1:9.11.5.P4+dfsg-5.1        arm64        Exported ISC Shared Library
+ii  libisc1100:arm64                     1:9.11.5.P4+dfsg-5.1        arm64        ISC Shared Library used by BIND
+ii  libisccc161:arm64                    1:9.11.5.P4+dfsg-5.1        arm64        Command Channel Library used by BIND
+ii  libisccfg163:arm64                   1:9.11.5.P4+dfsg-5.1        arm64        Config File Handling Library used by BIND
+ii  libisl19:arm64                       0.20-2                      arm64        manipulating sets and relations of integer points bounded by linear constraints
+ii  libisl22:arm64                       0.22-2                      arm64        manipulating sets and relations of integer points bounded by linear constraints
+ii  libitm1:arm64                        9.2.1-21                    arm64        GNU Transactional Memory Library
+ii  libjbig0:arm64                       2.1-3.1+b2                  arm64        JBIGkit libraries
+ii  libjpeg62-turbo:arm64                1:1.5.2-2+b1                arm64        libjpeg-turbo JPEG runtime library
+ii  libjson-c3:arm64                     0.12.1+ds-2                 arm64        JSON manipulation library - shared library
+ii  libk5crypto3:arm64                   1.17-3                      arm64        MIT Kerberos runtime libraries - Crypto Library
+ii  libkeyutils1:arm64                   1.6-6                       arm64        Linux Key Management Utilities (library)
+ii  libkmod2:arm64                       26-1                        arm64        libkmod shared library
+ii  libkrb5-3:arm64                      1.17-3                      arm64        MIT Kerberos runtime libraries
+ii  libkrb5support0:arm64                1.17-3                      arm64        MIT Kerberos runtime libraries - Support library
+ii  libldap-2.4-2:arm64                  2.4.47+dfsg-3+deb10u1       arm64        OpenLDAP libraries
+ii  libldap-common                       2.4.47+dfsg-3+deb10u1       all          OpenLDAP common files for libraries
+ii  liblmdb0:arm64                       0.9.22-1                    arm64        Lightning Memory-Mapped Database shared library
+ii  liblocale-gettext-perl               1.07-3+b4                   arm64        module using libc functions for internationalization in Perl
+ii  liblognorm5:arm64                    2.0.5-1                     arm64        log normalizing library
+ii  liblsan0:arm64                       9.2.1-21                    arm64        LeakSanitizer -- a memory leak detector (runtime)
+ii  liblua5.2-0:arm64                    5.2.4-1.1+b2                arm64        Shared library for the Lua interpreter version 5.2
+ii  liblwres161:arm64                    1:9.11.5.P4+dfsg-5.1        arm64        Lightweight Resolver Library used by BIND
+ii  liblz4-1:arm64                       1.8.3-1                     arm64        Fast LZ compression algorithm library - runtime
+ii  liblzma5:arm64                       5.2.4-1                     arm64        XZ-format compression library
+ii  libmagic-mgc                         1:5.35-4+deb10u1            arm64        File type determination library using "magic" numbers (compiled magic file)
+ii  libmagic1:arm64                      1:5.35-4+deb10u1            arm64        Recognize the type of data in a file using "magic" numbers - library
+ii  libmnl0:arm64                        1.0.4-2                     arm64        minimalistic Netlink communication library
+ii  libmount1:arm64                      2.33.1-0.1                  arm64        device mounting library
+ii  libmpc3:arm64                        1.1.0-1                     arm64        multiple precision complex floating-point library
+ii  libmpdec2:arm64                      2.4.2-2                     arm64        library for decimal floating point arithmetic (runtime library)
+ii  libmpfr6:arm64                       4.0.2-1                     arm64        multiple precision floating-point computation
+ii  libncurses6:arm64                    6.1+20181013-2+deb10u2      arm64        shared libraries for terminal handling
+ii  libncursesw6:arm64                   6.1+20181013-2+deb10u2      arm64        shared libraries for terminal handling (wide character support)
+ii  libnetfilter-conntrack3:arm64        1.0.7-1                     arm64        Netfilter netlink-conntrack library
+ii  libnettle6:arm64                     3.4.1-1                     arm64        low level cryptographic library (symmetric and one-way cryptos)
+ii  libnewt0.52:arm64                    0.52.20-8                   arm64        Not Erik's Windowing Toolkit - text mode windowing with slang
+ii  libnfnetlink0:arm64                  1.0.1-3+b1                  arm64        Netfilter netlink library
+ii  libnftnl11:arm64                     1.1.2-2                     arm64        Netfilter nftables userspace API library
+ii  libnghttp2-14:arm64                  1.36.0-2+deb10u1            arm64        library implementing HTTP/2 protocol (shared library)
+ii  libopts25:arm64                      1:5.18.12-4                 arm64        automated option processing library based on autogen
+ii  libp11-kit0:arm64                    0.23.15-2                   arm64        library for loading and coordinating access to PKCS#11 modules - runtime
+ii  libpam-modules:arm64                 1.3.1-5                     arm64        Pluggable Authentication Modules for PAM
+ii  libpam-modules-bin                   1.3.1-5                     arm64        Pluggable Authentication Modules for PAM - helper binaries
+ii  libpam-runtime                       1.3.1-5                     all          Runtime support for the PAM library
+ii  libpam0g:arm64                       1.3.1-5                     arm64        Pluggable Authentication Modules library
+ii  libpango-1.0-0:arm64                 1.42.4-7~deb10u1            arm64        Layout and rendering of internationalized text
+ii  libpangocairo-1.0-0:arm64            1.42.4-7~deb10u1            arm64        Layout and rendering of internationalized text
+ii  libpangoft2-1.0-0:arm64              1.42.4-7~deb10u1            arm64        Layout and rendering of internationalized text
+ii  libpcap0.8:arm64                     1.8.1-6                     arm64        system interface for user-level packet capture
+ii  libpcre2-8-0:arm64                   10.32-5                     arm64        New Perl Compatible Regular Expression Library- 8 bit runtime files
+ii  libpcre3:arm64                       2:8.39-12                   arm64        Old Perl 5 Compatible Regular Expression Library - runtime files
+ii  libperl5.28:arm64                    5.28.1-6                    arm64        shared Perl library
+ii  libpixman-1-0:arm64                  0.36.0-1                    arm64        pixel-manipulation library for X and cairo
+ii  libpng16-16:arm64                    1.6.36-6                    arm64        PNG library - runtime (version 1.6)
+ii  libpopt0:arm64                       1.16-12                     arm64        lib for parsing cmdline parameters
+ii  libprocps7:arm64                     2:3.3.15-2                  arm64        library for accessing process information from /proc
+ii  libprotobuf-c1:arm64                 1.3.1-1+b1                  arm64        Protocol Buffers C shared library (protobuf-c)
+ii  libpsl5:arm64                        0.20.2-2                    arm64        Library for Public Suffix List (shared libraries)
+ii  libpython3.7:arm64                   3.7.3-2                     arm64        Shared Python runtime library (version 3.7)
+ii  libpython3.7-minimal:arm64           3.7.3-2                     arm64        Minimal subset of the Python language (version 3.7)
+ii  libpython3.7-stdlib:arm64            3.7.3-2                     arm64        Interactive high-level object-oriented language (standard library, version 3.7)
+ii  libreadline7:arm64                   7.0-5                       arm64        GNU readline and history libraries, run-time libraries
+ii  librsvg2-2:arm64                     2.44.10-2.1                 arm64        SAX-based renderer library for SVG files (runtime)
+ii  librsvg2-common:arm64                2.44.10-2.1                 arm64        SAX-based renderer library for SVG files (extra runtime)
+ii  librtmp1:arm64                       2.4+20151223.gitfa8646d.1-2 arm64        toolkit for RTMP streams (shared library)
+ii  libruby2.5:arm64                     2.5.5-3                     arm64        Libraries necessary to run Ruby 2.5
+ii  libsasl2-2:arm64                     2.1.27+dfsg-1               arm64        Cyrus SASL - authentication abstraction library
+ii  libsasl2-modules-db:arm64            2.1.27+dfsg-1               arm64        Cyrus SASL - pluggable authentication modules (DB)
+ii  libseccomp2:arm64                    2.3.3-4                     arm64        high level interface to Linux seccomp filter
+ii  libselinux1:arm64                    2.8-1+b1                    arm64        SELinux runtime shared libraries
+ii  libsemanage-common                   2.8-2                       all          Common files for SELinux policy management libraries
+ii  libsemanage1:arm64                   2.8-2                       arm64        SELinux policy management library
+ii  libsepol1:arm64                      2.8-1                       arm64        SELinux library for manipulating binary security policies
+ii  libsigc++-2.0-0v5:arm64              2.10.1-2                    arm64        type-safe Signal Framework for C++ - runtime
+ii  libsigsegv2:arm64                    2.12-2                      arm64        Library for handling page faults in a portable way
+ii  libslang2:arm64                      2.3.2-2                     arm64        S-Lang programming library - runtime version
+ii  libsm6:arm64                         2:1.2.3-1                   arm64        X11 Session Management library
+ii  libsmartcols1:arm64                  2.33.1-0.1                  arm64        smart column output alignment library
+ii  libsqlite3-0:arm64                   3.27.2-3                    arm64        SQLite 3 shared library
+ii  libss2:arm64                         1.44.5-1+deb10u2            arm64        command-line interface parsing library
+ii  libssh2-1:arm64                      1.8.0-2.1                   arm64        SSH2 client-side library
+ii  libssl-dev:arm64                     1.1.1d-0+deb10u2            arm64        Secure Sockets Layer toolkit - development files
+ii  libssl1.1:arm64                      1.1.1d-0+deb10u2            arm64        Secure Sockets Layer toolkit - shared libraries
+ii  libstdc++-8-dev:arm64                8.3.0-6                     arm64        GNU Standard C++ Library v3 (development files)
+ii  libstdc++-9-dev:arm64                9.2.1-21                    arm64        GNU Standard C++ Library v3 (development files)
+ii  libstdc++6:arm64                     9.2.1-21                    arm64        GNU Standard C++ Library v3
+ii  libstdc++6-armhf-cross               9.2.1-21cross1              all          GNU Standard C++ Library v3 (armhf)
+ii  libsystemd0:arm64                    241-7~deb10u2               arm64        systemd utility library
+ii  libtasn1-6:arm64                     4.13-3                      arm64        Manage ASN.1 structures (runtime)
+ii  libtcl8.6:arm64                      8.6.9+dfsg-2                arm64        Tcl (the Tool Command Language) v8.6 - run-time library files
+ii  libtext-charwidth-perl               0.04-7.1+b1                 arm64        get display widths of characters on the terminal
+ii  libtext-iconv-perl                   1.7-5+b6                    arm64        converts between character sets in Perl
+ii  libtext-wrapi18n-perl                0.06-7.1                    all          internationalized substitute of Text::Wrap
+ii  libthai-data                         0.1.28-2                    all          Data files for Thai language support library
+ii  libthai0:arm64                       0.1.28-2                    arm64        Thai language support library
+ii  libtiff5:arm64                       4.0.10-4                    arm64        Tag Image File Format (TIFF) library
+ii  libtinfo6:arm64                      6.1+20181013-2+deb10u2      arm64        shared low-level terminfo library for terminal handling
+ii  libtsan0:arm64                       9.2.1-21                    arm64        ThreadSanitizer -- a Valgrind-based detector of data races (runtime)
+ii  libubsan1:arm64                      9.2.1-21                    arm64        UBSan -- undefined behaviour sanitizer (runtime)
+ii  libubsan1-armhf-cross                9.2.1-21cross1              all          UBSan -- undefined behaviour sanitizer (runtime)
+ii  libudev1:arm64                       241-7~deb10u2               arm64        libudev shared library
+ii  libunistring2:arm64                  0.9.10-1                    arm64        Unicode string library for C
+ii  libutempter0:arm64                   1.1.6-3                     arm64        privileged helper for utmp/wtmp updates (runtime)
+ii  libuuid1:arm64                       2.33.1-0.1                  arm64        Universally Unique ID library
+ii  libwebp6:arm64                       0.6.1-2                     arm64        Lossy compression of digital photographic images.
+ii  libwrap0:arm64                       7.6.q-28                    arm64        Wietse Venema's TCP wrappers library
+ii  libx11-6:arm64                       2:1.6.7-1                   arm64        X11 client-side library
+ii  libx11-data                          2:1.6.7-1                   all          X11 client-side library
+ii  libxapian30:arm64                    1.4.11-1                    arm64        Search engine library
+ii  libxau6:arm64                        1:1.0.8-1+b2                arm64        X11 authorisation library
+ii  libxcb-render0:arm64                 1.13.1-2                    arm64        X C Binding, render extension
+ii  libxcb-shm0:arm64                    1.13.1-2                    arm64        X C Binding, shm extension
+ii  libxcb1:arm64                        1.13.1-2                    arm64        X C Binding
+ii  libxcomposite1:arm64                 1:0.4.4-2                   arm64        X11 Composite extension library
+ii  libxcursor1:arm64                    1:1.1.15-2                  arm64        X cursor management library
+ii  libxdamage1:arm64                    1:1.1.4-3+b3                arm64        X11 damaged region extension library
+ii  libxdmcp6:arm64                      1:1.1.2-3                   arm64        X11 Display Manager Control Protocol library
+ii  libxext6:arm64                       2:1.3.3-1+b2                arm64        X11 miscellaneous extension library
+ii  libxfixes3:arm64                     1:5.0.3-1                   arm64        X11 miscellaneous 'fixes' extension library
+ii  libxi6:arm64                         2:1.7.9-1                   arm64        X11 Input extension library
+ii  libxinerama1:arm64                   2:1.1.4-2                   arm64        X11 Xinerama extension library
+ii  libxml2:arm64                        2.9.4+dfsg1-7+b3            arm64        GNOME XML library
+ii  libxrandr2:arm64                     2:1.5.1-1                   arm64        X11 RandR extension library
+ii  libxrender1:arm64                    1:0.9.10-1                  arm64        X Rendering Extension client library
+ii  libxt6:arm64                         1:1.1.5-1+b3                arm64        X11 toolkit intrinsics library
+ii  libxtables12:arm64                   1.8.2-4                     arm64        netfilter xtables library
+ii  libyaml-0-2:arm64                    0.2.1-1                     arm64        Fast YAML 1.1 parser and emitter library
+ii  libzstd1:arm64                       1.3.8+dfsg-3                arm64        fast lossless compression algorithm
+ii  linux-libc-dev:arm64                 4.19.67-2+deb10u1           arm64        Linux support headers for userspace development
+ii  linux-libc-dev-armhf-cross           5.2.9-2cross7               all          Linux Kernel Headers for development (for cross-compiling)
+ii  locales                              2.28-10                     all          GNU C Library: National Language (locale) data [support]
+ii  login                                1:4.5-1.1                   arm64        system login tools
+ii  logrotate                            3.14.0-4                    arm64        Log rotation utility
+ii  lsb-base                             10.2019051400               all          Linux Standard Base init script functionality
+ii  m4                                   1.4.18-2                    arm64        macro processing language
+ii  make                                 4.2.1-1.2                   arm64        utility for directing compilation
+ii  mawk                                 1.3.3-17+b3                 arm64        a pattern scanning and text processing language
+ii  mime-support                         3.62                        all          MIME files 'mime.types' & 'mailcap', and support programs
+ii  mount                                2.33.1-0.1                  arm64        tools for mounting and manipulating filesystems
+ii  nano                                 3.2-3                       arm64        small, friendly text editor inspired by Pico
+ii  ncurses-base                         6.1+20181013-2+deb10u2      all          basic terminal type definitions
+ii  ncurses-bin                          6.1+20181013-2+deb10u2      arm64        terminal-related programs and man pages
+ii  netbase                              5.6                         all          Basic TCP/IP networking system
+ii  netcat-traditional                   1.10-41.1                   arm64        TCP/IP swiss army knife
+ii  ntp                                  1:4.2.8p12+dfsg-4           arm64        Network Time Protocol daemon and utility programs
+ii  ntpdate                              1:4.2.8p12+dfsg-4           arm64        client for setting system time from NTP servers (deprecated)
+ii  openssh-client                       1:7.9p1-10+deb10u1          arm64        secure shell (SSH) client, for secure access to remote machines
+ii  openssh-server                       1:7.9p1-10+deb10u1          arm64        secure shell (SSH) server, for secure access from remote machines
+ii  openssh-sftp-server                  1:7.9p1-10+deb10u1          arm64        secure shell (SSH) sftp server module, for SFTP access from remote machines
+ii  openssl                              1.1.1d-0+deb10u2            arm64        Secure Sockets Layer toolkit - cryptographic utility
+ii  passwd                               1:4.5-1.1                   arm64        change and administer password and group data
+ii  patch                                2.7.6-3+deb10u1             arm64        Apply a diff file to an original
+ii  perl                                 5.28.1-6                    arm64        Larry Wall's Practical Extraction and Report Language
+ii  perl-base                            5.28.1-6                    arm64        minimal Perl system
+ii  perl-modules-5.28                    5.28.1-6                    all          Core Perl modules
+ii  procps                               2:3.3.15-2                  arm64        /proc file system utilities
+ii  pv                                   1.6.6-1                     arm64        Shell pipeline element to meter data passing through
+ii  rake                                 12.3.1-3                    all          ruby make-like utility
+ii  raspberrypi-bootloader:armhf         1.20190925+1-1              armhf        Raspberry Pi bootloader
+ii  raspberrypi-kernel:armhf             1.20190925+1-1              armhf        Raspberry Pi bootloader
+ii  readline-common                      7.0-5                       all          GNU readline and history libraries, common files
+ii  rsyslog                              8.1901.0-1                  arm64        reliable system and kernel logging daemon
+ii  ruby                                 1:2.5.1                     arm64        Interpreter of object-oriented scripting language Ruby (default version)
+ii  ruby-did-you-mean                    1.2.1-1                     all          smart error messages for Ruby > 2.3
+ii  ruby-minitest                        5.11.3-1                    all          Ruby test tools supporting TDD, BDD, mocking, and benchmarking
+ii  ruby-net-telnet                      0.1.1-2                     all          telnet client library
+ii  ruby-power-assert                    1.1.1-1                     all          library showing values of variables and method calls in an expression
+ii  ruby-test-unit                       3.2.8-1                     all          unit testing framework for Ruby
+ii  ruby-xmlrpc                          0.3.0-2                     all          XMLRPC library for Ruby
+ii  ruby2.5                              2.5.5-3                     arm64        Interpreter of object-oriented scripting language Ruby
+ii  rubygems-integration                 1.11                        all          integration of Debian Ruby packages with Rubygems
+ii  screen                               4.6.2-3                     arm64        terminal multiplexer with VT100/ANSI terminal emulation
+ii  sed                                  4.7-1                       arm64        GNU stream editor for filtering/transforming text
+ii  sensible-utils                       0.0.12                      all          Utilities for sensible alternative selection
+ii  shared-mime-info                     1.10-1                      arm64        FreeDesktop.org shared MIME database and spec
+ii  sudo                                 1.8.27-1+deb10u1            arm64        Provide limited super user privileges to specific users
+ii  systemd                              241-7~deb10u2               arm64        system and service manager
+ii  systemd-sysv                         241-7~deb10u2               arm64        system and service manager - SysV links
+ii  sysvinit-utils                       2.93-8                      arm64        System-V-like utilities
+ii  tar                                  1.30+dfsg-6                 arm64        GNU version of the tar archiving utility
+ii  task-ssh-server                      3.53                        all          SSH server
+ii  tasksel                              3.53                        all          tool for selecting tasks for installation on Debian systems
+ii  tasksel-data                         3.53                        all          official tasks used for installation of Debian systems
+ii  tcpdump                              4.9.3-1~deb10u1             arm64        command-line network traffic analyzer
+ii  telnet                               0.17-41.2                   arm64        basic telnet client
+ii  tzdata                               2019c-0+deb10u1             all          time zone and daylight-saving time data
+ii  ucf                                  3.0038+nmu1                 all          Update Configuration File(s): preserve user changes to config files
+ii  udev                                 241-7~deb10u2               arm64        /dev/ and hotplug management daemon
+ii  util-linux                           2.33.1-0.1                  arm64        miscellaneous system utilities
+ii  vim-common                           2:8.1.0875-5                all          Vi IMproved - Common files
+ii  vim-gtk                              2:8.1.0875-5                arm64        Vi IMproved - enhanced vi editor - with GTK2 GUI
+ii  vim-gui-common                       2:8.1.0875-5                all          Vi IMproved - Common GUI files
+ii  vim-runtime                          2:8.1.0875-5                all          Vi IMproved - Runtime files
+ii  vim-tiny                             2:8.1.0875-5                arm64        Vi IMproved - enhanced vi editor - compact version
+ii  wget                                 1.20.1-1.1                  arm64        retrieves files from the web
+ii  whiptail                             0.52.20-8                   arm64        Displays user-friendly dialog boxes from shell scripts
+ii  x11-common                           1:7.7+19                    all          X Window System (X.Org) infrastructure
+ii  xxd                                  2:8.1.0875-5                arm64        tool to make (or reverse) a hex dump
+ii  xz-utils                             5.2.4-1                     arm64        XZ-format compression utilities
+ii  zlib1g:arm64                         1:1.2.11.dfsg-1             arm64        compression library - runtime
