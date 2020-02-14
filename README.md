@@ -197,7 +197,7 @@ sudo umount /media/thomas/boot /media/thomas/root
 ```
 
 ### Software Versions
-The versions of all the software were recorded via "dpkg -l" and saved into [[dpkg-l.pi32.txt]] and [[dpkg-l.pi64.txt]]. The git ref for the linux repo is 219d543.
+The versions of all the software were recorded via "dpkg -l" and saved into [dpkg-l.pi32.txt](dpkg-l.pi32.txt) and [dpkg-l.pi64.txt](dpkg-l.pi64.txt). The git ref for the linux repo is 219d543.
 
 
 ### Benchmark Scripts
@@ -301,21 +301,47 @@ root@raspberrypi:~#
 The CPU throttles at 60C, as I wanted to prove this for the test, I didn't want to interfere with the numbers, so I just checked the temp during the ICE-Tower test, some 10 minutes in. Without the fan it was 49C and with the fan it was 39C, thus it is highly likely the CPU didn't throttle for the ICT-Tower with fan run.
 
 ## Results
-The results were captured and stored in the [[raw-results.txt]] file. The ICT-Tower tests were performed last
+The results were captured and stored in the [raw-results.txt](raw-results.txt]) file. The ICT-Tower tests were performed last. The raw results have been extracted and showed below.
 
-### Results table
+### Raw
 
-32bit
- 1. The Official Case with the lid on: 43m15.902s 43m11.033s 43m11.276s 43m10.015s 43m12.036s 43m9.884s 43m11.145s 43m9.960s 43m9.876s 43m11.020s
- 1. The Official Case with the lid removed: 43m10.650s 43m11.010s 43m8.535s 43m11.015s 43m10.457s 43m11.232s 43m11.437s 43m10.302s 43m11.014s 43m12.690s
- 1. An Aluminium Armour case: 42m58.007s 42m51.496s 42m52.415s 42m53.284s 42m51.715s 42m52.886s 42m54.284s 42m53.517s 42m53.503s 42m54.218s
- 1. An ICE-Tower case without the fan: 42m58.964s 42m54.885s 42m52.355s 42m50.546s 42m51.672s 42m51.357s 42m50.118s 42m51.581s 42m53.007s 42m52.555s
- 1. An ICE-Tower case with the fan: 42m53.549s 42m53.206s 42m53.854s 42m54.902s 42m53.677s 42m53.016s 42m53.346s 42m54.208s 42m55.307s 42m55.457s
+ 1. The Official Case with the lid on (32bit) data: 43m15.902s 43m11.033s 43m11.276s 43m10.015s 43m12.036s 43m9.884s 43m11.145s 43m9.960s 43m9.876s 43m11.020s
+ 1. The Official Case with the lid removed (32bit) data: 43m10.650s 43m11.010s 43m8.535s 43m11.015s 43m10.457s 43m11.232s 43m11.437s 43m10.302s 43m11.014s 43m12.690s
+ 1. An Aluminium Armour case (32bit) data: 42m58.007s 42m51.496s 42m52.415s 42m53.284s 42m51.715s 42m52.886s 42m54.284s 42m53.517s 42m53.503s 42m54.218s
+ 1. An ICE-Tower case without the fan (32bit) data: 42m58.964s 42m54.885s 42m52.355s 42m50.546s 42m51.672s 42m51.357s 42m50.118s 42m51.581s 42m53.007s 42m52.555s
+ 1. An ICE-Tower case with the fan (32bit) data: 42m53.549s 42m53.206s 42m53.854s 42m54.902s 42m53.677s 42m53.016s 42m53.346s 42m54.208s 42m55.307s 42m55.457s
+ 1. The Official Case with the lid on (64bit) data: 56m0.639s 55m50.670s 55m50.138s 55m47.318s 55m49.335s 55m50.565s 55m50.333s 55m38.820s 55m10.400s 55m7.593s
+ 1. The Official Case with the lid removed (64bit) data: 55m9.495s 55m10.977s 55m10.736s 55m7.511s 55m9.524s 55m9.841s 55m11.216s 55m10.617s 55m11.259s 55m11.089s
+ 1. An Aluminium Armour case (64bit) data: 55m20.320s 55m14.748s 55m14.238s 55m14.703s 55m13.228s 55m13.075s 55m13.987s 55m12.207s 55m14.170s 55m14.642s
+ 1. An ICE-Tower case without the fan (64bit) data: 56m4.270s 55m57.949s 56m0.231s 55m57.002s 55m56.020s 55m58.625s 55m59.630s 55m57.875s 55m56.967s 55m59.537s
+ 1. An ICE-Tower case with the fan (64bit) data: 55m58.401s 56m0.375s 56m0.491s 56m0.442s 55m59.485s 55m57.220s 55m59.149s 56m0.650s 55m59.686s 55m58.864s
 
-64bit
- 1. The Official Case with the lid on: 56m0.639s 55m50.670s 55m50.138s 55m47.318s 55m49.335s 55m50.565s 55m50.333s 55m38.820s 55m10.400s 55m7.593s
- 1. The Official Case with the lid removed: 55m9.495s 55m10.977s 55m10.736s 55m7.511s 55m9.524s 55m9.841s 55m11.216s 55m10.617s 55m11.259s 55m11.089s
- 1. An Aluminium Armour case: 55m20.320s 55m14.748s 55m14.238s 55m14.703s 55m13.228s 55m13.075s 55m13.987s 55m12.207s 55m14.170s 55m14.642s
- 1. An ICE-Tower case without the fan: 56m4.270s 55m57.949s 56m0.231s 55m57.002s 55m56.020s 55m58.625s 55m59.630s 55m57.875s 55m56.967s 55m59.537s
- 1. An ICE-Tower case with the fan: 55m58.401s 56m0.375s 56m0.491s 56m0.442s 55m59.485s 55m57.220s 55m59.149s 56m0.650s 55m59.686s 55m58.864s
+### Averages
 
+The Official Case with the lid on (32bit): 43.19
+The Official Case with the lid removed (32bit): 43.18
+An Aluminium Armour case (32bit): 42.89
+An ICE-Tower case without the fan (32bit): 42.88
+An ICE-Tower case with the fan (32bit): 42.9
+The Official Case with the lid on (64bit): 55.69
+The Official Case with the lid removed (64bit): 55.17
+An Aluminium Armour case (64bit): 55.24
+An ICE-Tower case without the fan (64bit): 55.98
+An ICE-Tower case with the fan (64bit): 55.99
+
+## Graphs
+The graphs were created using the amazing https://matplotlib.org/ using a small [plot.py](plot.py) script.
+
+### armhf (32bit)
+[plot32.png]
+
+### arm64 (64bit)
+[plot64.png]
+
+### armhf (32bit) vs arm64 (64bit)
+[plot.png]
+
+## Conclusion
+The type of case configuraiton does not really effect overall speed.
+
+Assuming that we considar the ICE-Tower with fan number numbers, 64bit is 30% slower thatn 32bit.
