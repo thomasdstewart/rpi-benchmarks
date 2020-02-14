@@ -1,4 +1,27 @@
 # Raspberry Pi 4 Benchmarks
+# Table of contents
+   * [Raspberry Pi 4 Benchmarks](#raspberry-pi-4-benchmarks)
+      * [Background](#background)
+      * [Aim](#aim)
+      * [Method](#method)
+         * [Install System](#install-system)
+         * [System Size](#system-size)
+         * [Copying System to Media](#copying-system-to-media)
+         * [Software Versions](#software-versions)
+         * [Benchmark Scripts](#benchmark-scripts)
+         * [Running Method](#running-method)
+         * [Raspberry Pi 4 Firmware](#raspberry-pi-4-firmware)
+         * [Running Kernel Version and Memory](#running-kernel-version-and-memory)
+         * [Cooling](#cooling)
+      * [Results](#results)
+         * [Raw](#raw)
+         * [Averaged](#averaged)
+      * [Graphs](#graphs)
+         * [armhf (32bit)](#armhf-32bit)
+         * [arm64 (64bit)](#arm64-64bit)
+         * [armhf (32bit) vs arm64 (64bit)](#armhf-32bit-vs-arm64-64bit)
+      * [Conclusion](#conclusion)
+
 ## Background
 My main home server has been based on a Raspberry Pi for many years. With the recent Raspberry Pi 4 update I decided I would upgrade my existing Pi3. I then decided that I should replace my existing USB hard drive with a new USB3 drive. So while could just rsync to the new disk I also wanted to migrate my own servers to be managed via Ansbile, so this would really require a reinstall to achieve this.
 
@@ -316,9 +339,9 @@ The results were captured and stored in the [raw-results.txt](raw-results.txt]) 
  1. An ICE-Tower case without the fan (64bit) data: 56m4.270s 55m57.949s 56m0.231s 55m57.002s 55m56.020s 55m58.625s 55m59.630s 55m57.875s 55m56.967s 55m59.537s
  1. An ICE-Tower case with the fan (64bit) data: 55m58.401s 56m0.375s 56m0.491s 56m0.442s 55m59.485s 55m57.220s 55m59.149s 56m0.650s 55m59.686s 55m58.864s
 
-### Averages
+### Averaged
 
-| Test | Averate time taken to complte (minutes) |
+| Test | Averate time taken to complete (minutes) |
 | ---  | --- |
 | The Official Case with the lid on (32bit)      | 43.19 |
 | The Official Case with the lid removed (32bit) | 43.18 |
