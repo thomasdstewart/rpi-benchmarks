@@ -318,28 +318,30 @@ The results were captured and stored in the [raw-results.txt](raw-results.txt]) 
 
 ### Averages
 
-The Official Case with the lid on (32bit): 43.19
-The Official Case with the lid removed (32bit): 43.18
-An Aluminium Armour case (32bit): 42.89
-An ICE-Tower case without the fan (32bit): 42.88
-An ICE-Tower case with the fan (32bit): 42.9
-The Official Case with the lid on (64bit): 55.69
-The Official Case with the lid removed (64bit): 55.17
-An Aluminium Armour case (64bit): 55.24
-An ICE-Tower case without the fan (64bit): 55.98
-An ICE-Tower case with the fan (64bit): 55.99
+| Test | Averate time taken to complte (minutes) |
+| ---  | --- |
+| The Official Case with the lid on (32bit)      | 43.19 |
+| The Official Case with the lid removed (32bit) | 43.18 |
+| An Aluminium Armour case (32bit)               | 42.89 |
+| An ICE-Tower case without the fan (32bit)      | 42.88 |
+| An ICE-Tower case with the fan (32bit)         | 42.90 |
+| The Official Case with the lid on (64bit)      | 55.69 |
+| The Official Case with the lid removed (64bit) | 55.17 |
+| An Aluminium Armour case (64bit)               | 55.24 |
+| An ICE-Tower case without the fan (64bit)      | 55.98 |
+| An ICE-Tower case with the fan (64bit)         | 55.99 |
 
 ## Graphs
 The graphs were created using the amazing https://matplotlib.org/ using a small [plot.py](plot.py) script.
 
 ### armhf (32bit)
-[plot32.png]
+![plot32.png](plot32.png)
 
 ### arm64 (64bit)
-[plot64.png]
+![plot64.png](plot64.png)
 
 ### armhf (32bit) vs arm64 (64bit)
-[plot.png]
+![plot.png](plot.png)
 
 ## Conclusion
 The type of case configuraiton does not really effect overall speed.
