@@ -38,7 +38,8 @@ Performing this does prove slightly difficult mostly because the compile is on t
 To try to keep the test fair the same Raspberry Pi and USB hard drive was used for all the tests. For both armhf and arm64 the systems were entirely Debian with the exception of the raspberrypi-bootloader and raspberrypi-kernel packages. The SD card would be /boot and the entire 5TB USB hard drive is /root.
 
 ### Install System
-The mechanism to build the raspberry pi disk images were copy and pasting shell commands.
+The mechanism to build the raspberry pi disk images were copy and pasting shell commands.  They are mostly generic with the excepsion of my username (thomas).  The following commands were used to create both images, copying and pasting several lines at a time and checking the output was expected.
+
 ```
 sudo rm -r -f pi32 pi64
 p="aptitude,bc,binutils,bison,bind9-host,build-essential,curl,debconf-utils,dnsutils,fake-hwclock,file,flex,git,less,libssl-dev,locales,netcat-traditional,ntp,ntpdate,pv,screen,sudo,task-ssh-server,tcpdump,telnet,vim-gtk,wget"
@@ -183,10 +184,7 @@ make defconfig
 EOF
 
 sudo chmod +x pi32/home/thomas/linux-5.4/run.sh pi64/home/thomas/linux-5.4/run.sh
-```
 
-After which two more steps to set the root password and thomas password were formed using
-```
 sudo chroot pi32 passwd
 sudo chroot pi32 passwd thomas
 sudo chroot pi64 passwd
@@ -194,7 +192,7 @@ sudo chroot pi64 passwd thomas
 ```
 
 ### System Size
-Interestingly the 64 bit system is 15% larger than 32 bit on disk:
+Interestingly the 64 bit system is 15% larger on disk than 32 bit system:
 ```
 $ sudo du -sh pi32 pi64
 2.6G	pi32
@@ -202,16 +200,15 @@ $ sudo du -sh pi32 pi64
 ```
 
 ### Copying System to Media
-The following command copy the system to the media for the 32bit test
+Both SD card and USB disk had new parition tables created and new blank empty filesystems created with apropreate lables so they would mount in consistant places. The following commands were used to copy the system to the media for the 32bit test.
 ```
 sudo rm -r -f /media/thomas/root/* /media/thomas/boot/*
-
 sudo rsync -cax --delete ./pi32/. /media/thomas/root/.
 sudo rsync -crptx --delete ./pi32/boot/. /media/thomas/boot/.
 sudo umount /media/thomas/boot /media/thomas/root
 ```
 
-Later to update to the 64 bit test (note that the Linux src will remain on the same inodes on disk):
+Later to update to the 64 bit system the following commands were used (note that the Linux src will remain on the same inodes on disk):
 ```
 sudo rsync -cax --delete ./pi64/. /media/thomas/root/.
 sudo rsync -crptx --delete ./pi64/boot/. /media/thomas/boot/.
@@ -220,13 +217,13 @@ sudo umount /media/thomas/boot /media/thomas/root
 ```
 
 ### Software Versions
-The versions of all the software were recorded via "dpkg -l" and saved into [dpkg-l.pi32.txt](dpkg-l.pi32.txt) and [dpkg-l.pi64.txt](dpkg-l.pi64.txt). The git ref for the linux repo is 219d543.
+The systems ran testing/unstable (bullseye/sid) and all software was up to date at the time of the test which was just after 16th December 2019). The versions of all the software were recorded via "dpkg -l" and saved into [dpkg-l.pi32.txt](dpkg-l.pi32.txt) and [dpkg-l.pi64.txt](dpkg-l.pi64.txt). The git ref for the Linux repo is 219d543 which is tagged v5.4.
 
 
 ### Benchmark Scripts
-The benchmark scripts are embedded into the above build script, however to aid readability the first step is to download the source from https://github.com/torvalds/linux/archive/v5.4.tar.gz and extract. Each system has a run.sh script created. The first step is to fix the build timestamp and host, so that the end images will be the same, thanks to reproducible builds this works. The next step is to completely clean the source with make mrpropper. Then on arm64 set it to cross compile and make a defconfig default config. The last step is to bild zImage, run an md5sum to verify the image and to record the time taken.
+The benchmark scripts are embedded into the above build script, however to aid readability the first step is to download the source from https://github.com/torvalds/linux/archive/v5.4.tar.gz and extract it. Each system has a run.sh script created. The first step is to set the build timestamp and host, so that the end images will be the same, thanks to reproducible builds this works very well. The next step is to completely clean the source with make mrpropper. Then on arm64 set it to cross compile and on both systems make a defconfig default config. The last step is to build zImage, run a md5sum to verify the image produced is the same and to record the time taken.
 
-The armhf looks like:
+The armhf run.sh script looks like:
 ```
 #!/bin/bash -x
 export KBUILD_BUILD_TIMESTAMP="16 Dec 2019 00:00:00"
@@ -236,7 +233,7 @@ make defconfig
 (time make -j 4 zImage; md5sum arch/arm/boot/zImage 1>&2) 2> result.$(date +%s)
 ```
 
-The arm64 one looks like:
+The arm64 run.sh script looks like:
 ```
 export KBUILD_BUILD_TIMESTAMP="16 Dec 2019 00:00:00"
 export KBUILD_BUILD_HOST=pi
@@ -294,14 +291,14 @@ thomas@pi64:~$
 ```
 
 ### Cooling
-During the Benchmark the fact that Raspberry Pi 4 boards run a lot hotter showed. I wanted to run the test with different hardware configurations that might influence the final deployment. I also wanted to prove that the CPU was not being throttled, and thus artificially capping the results. So the benchmark was repeated 10 times on armhf and arm64 with the following six configurations:
+During the Benchmark the fact that Raspberry Pi 4 boards run a lot hotter than Raspberry Pi 3 boards showed. I wanted to run the test with different hardware configurations which might influence the final deployment. I also wanted to prove that the CPU was not being throttled, and thus artificially capping the results. So the benchmark was repeated 10 times on armhf and arm64 with the following six configurations:
  1. The Official Case with the lid on
  1. The Official Case with the lid removed
  1. An Aluminium Armour case (https://thepihut.com/products/aluminium-armour-heatsink-case-for-raspberry-pi-4)
  1. An ICE-Tower case without the fan (https://thepihut.com/products/ice-tower-raspberry-pi-4-cpu-cooler)
  1. An ICE-Tower case with the fan (https://thepihut.com/products/ice-tower-raspberry-pi-4-cpu-cooler)
 
-Some references I used:
+Some references I used for temperature and cpu throttling:
  . https://www.jeffgeerling.com/blog/2019/raspberry-pi-4-needs-fan-heres-why-and-how-you-can-add-one
  . https://www.raspberrypi.org/blog/thermal-testing-raspberry-pi-4/
 
@@ -314,17 +311,17 @@ throttled=0x0
 root@raspberrypi:~#
 ```
 
-However vcgencmd is part of the Raspberry Pi closed firmware and thus does not run on arm64. Fortunately the cpu temp is reported in the sysfs filesystem:
+Unfortunately vcgencmd is part of the Raspberry Pi closed firmware and thus does not run on arm64. Fortunately the cpu temp is reported in the sysfs filesystem:
 ```
 root@raspberrypi:~# cat /sys/devices/virtual/thermal/thermal_zone0/temp 
 60861
 root@raspberrypi:~# 
 ```
 
-The CPU throttles at 60C, as I wanted to prove this for the test, I didn't want to interfere with the numbers, so I just checked the temp during the ICE-Tower test, some 10 minutes in. Without the fan it was 49C and with the fan it was 39C, thus it is highly likely the CPU didn't throttle for the ICT-Tower with fan run.
+The CPU throttles at 60C, as I wanted to prove this for the test, I didn't want to interfere with the numbers, so I just checked the temp during the ICE-Tower test, some 10 minutes in. Without the fan it was 49C and with the fan it was 39C, thus it is highly likely the CPU didn't throttle for the the entire ICT-Tower with fan benchmark.
 
 ## Results
-The results were captured and stored in the [raw-results.txt](raw-results.txt]) file. The ICT-Tower tests were performed last. The raw results have been extracted and showed below.
+The results were captured and stored in the [raw-results.txt](raw-results.txt]) file. The ICT-Tower tests were performed last because the parts arrived latter because I didn't order them till later. The raw results have been extracted from raw-results.txt and shown below.
 
 ### Raw
 
@@ -341,7 +338,7 @@ The results were captured and stored in the [raw-results.txt](raw-results.txt]) 
 
 ### Averaged
 
-| Test | Averate time taken to complete (minutes) |
+| Test | Average time taken to complete (minutes) |
 | ---  | --- |
 | The Official Case with the lid on (32bit)      | 43.19 |
 | The Official Case with the lid removed (32bit) | 43.18 |
@@ -367,9 +364,8 @@ The graphs were created using the amazing https://matplotlib.org/ using a small 
 ![plot.png](plot.png)
 
 ## Conclusion
-The type of case configuraiton does not really effect overall speed.
-
-Assuming that we considar the ICE-Tower with fan number numbers, 64bit is 30% slower thatn 32bit.
+ . The type of case configuration does not really effect overall speed.
+ . Assuming that we consider the ICE-Tower with fan benchmarks the 64bit is 30% slower than 32bit.
 
 ## Addendum
-
+Repeating the test in an ad-hoc manor on a Raspbian system proved far faster, so much so that I need to consider switching to Raspbian. However to prove so I needed to repeat the benchmarks in a more controller manor, eg same version of gcc etc. This will be done in [Raspbian.md](Raspbian.md).
