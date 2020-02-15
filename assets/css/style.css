@@ -2,6 +2,6 @@
 ---
 @import "{{ site.theme }}";
 
-.page-header {
-    background: #191c20;
+.inner {
+    max-width: 1200px;
 }
