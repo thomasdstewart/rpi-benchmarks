@@ -1,41 +1,41 @@
 # Raspberry Pi 4 Benchmarks
 # Table of contents
-   * [Raspberry Pi 4 Benchmarks](#raspberry-pi-4-benchmarks)
-      * [Background](#background)
-      * [Aim](#aim)
-      * [Method](#method)
-         * [Install System](#install-system)
-         * [System Size](#system-size)
-         * [Copying System to Media](#copying-system-to-media)
-         * [Software Versions](#software-versions)
-         * [Benchmark Scripts](#benchmark-scripts)
-         * [Running Method](#running-method)
-         * [Raspberry Pi 4 Firmware](#raspberry-pi-4-firmware)
-         * [Running Kernel Version and Memory](#running-kernel-version-and-memory)
-         * [Cooling](#cooling)
-      * [Results](#results)
-         * [Raw](#raw)
-         * [Averaged](#averaged)
-      * [Graphs](#graphs)
-         * [armhf (32bit)](#armhf-32bit)
-         * [arm64 (64bit)](#arm64-64bit)
-         * [armhf (32bit) vs arm64 (64bit)](#armhf-32bit-vs-arm64-64bit)
-      * [Conclusion](#conclusion)
+   * [Background](#background)
+   * [Aim](#aim)
+   * [Method](#method)
+      * [Install System](#install-system)
+      * [System Size](#system-size)
+      * [Copying System to Media](#copying-system-to-media)
+      * [Software Versions](#software-versions)
+      * [Benchmark Scripts](#benchmark-scripts)
+      * [Running Method](#running-method)
+      * [Raspberry Pi 4 Firmware](#raspberry-pi-4-firmware)
+      * [Running Kernel Version and Memory](#running-kernel-version-and-memory)
+      * [Cooling](#cooling)
+   * [Results](#results)
+      * [Raw](#raw)
+      * [Averaged](#averaged)
+   * [Graphs](#graphs)
+      * [armhf (32bit)](#armhf-32bit)
+      * [arm64 (64bit)](#arm64-64bit)
+      * [armhf (32bit) vs arm64 (64bit)](#armhf-32bit-vs-arm64-64bit)
+   * [Conclusion](#conclusion)
+   * [Addendum](#addendum)
 
 ## Background
-My main home server has been based on a Raspberry Pi for many years. With the recent Raspberry Pi 4 update I decided I would upgrade my existing Pi3. I then decided that I should replace my existing USB hard drive with a new USB3 drive. So while could just rsync to the new disk I also wanted to migrate my own servers to be managed via Ansbile, so this would really require a reinstall to achieve this.
+My main home server has been based on a Raspberry Pi for many years, starting with a Raspberry Pi 1 Model B, then a Raspberry Pi 2 Model B and mostly recently a Raspberry Pi 3 Model B. With the recent Raspberry Pi 4 update I decided I would upgrade to a Raspberry Pi 4 Model 4 (4GB). I then decided that I should replace my existing USB hard drive with a new drive. I could just duplicate the drive with rsync to the new disk I also wanted to migrate my personal servers to be managed via Ansbile, so this would require a reinstall to achieve this.
 
-My current setup is based on Debian running the armhf arch. It's entirely Debian with the exception of two Rasberry Pi packages (raspberrypi-bootloader, raspberrypi-kernel). I then thought about if I should move to arm64 or not.
+My current setup is based on Debian running the armhf arch. It's entirely Debian with the exception of two Rasberry Pi packages: raspberrypi-bootloader and raspberrypi-kernel. While thinking about the reinstalation I starting thinking about running arm64.
 
 ## Aim
-Find out if Debian armhr or Debian arm64 (ie 32bit vs 64bit) performs better  on Raspberry Pi 4 with a single root filesystems as an external USB3 HD (WD 5TB Elements Portable External Hard Drive, USB 3.0 https://www.amazon.co.uk/gp/product/B07X41PWTY/).
+Find out if Debian armhr/armv7l or Debian aarch64/arm64 (ie 32bit vs 64bit) performs better on Raspberry Pi 4 with a single external USB root filesystem (WD 5TB Elements Portable External Hard Drive, USB 3.0 https://www.amazon.co.uk/gp/product/B07X41PWTY/).
 
 ## Method
-Currently the server does a mix of: Nextlcoud, LAMP, IPv6 router, IPv6 Tunnel, Jumphost. Ultimately I want these applications to perform the best. Benchmarks are hard and benchmarking all these applications would be hard. In addition simple CPU stress, or IO benchmarks would also not represent real life. So ultimately I decided to compile a Linux kernel, and the time taken to perform would be the benchmark.
+Currently the server does a mix of: Nextlcoud, LAMP, IPv6 router, IPv6 Tunnel, SSH Jumphost and w1retap temperature logger. Ultimately I want these applications to perform the best. Benchmarks are hard and benchmarking all these applications would be hard. In addition simple CPU stress and I/O benchmarks would not represent real life. I wanted to find something that was more close to real life while at the same the be repeatable. Induvidual Apache, postgres and IP forwarding benchmarks would be possible, however I decided it would be far too time consuming. I wanted something that would stress the CPU, memory and Disk. Ultimately I decided to compile a Linux kernel, and the time taken to perform a full compile would be the benchmark.
 
-Performing this does prove slightly difficult mostly because the compile is on two different architectures. The default Linux build config (defconfig) is different between archs. Hence a cross compiler is needed to build for a common target and common defconfig. Ultimately armhf does not have any cross compilers where as arm64 does have a armhf cross compiler. So the benchmark method is to build using native gcc on armhf and build using a armhf cross compiling gcc on an arm64, both using the same defconfig and both resulting in the same kernel image.
+Performing this does prove slightly difficult mostly because the compile is on two different architectures. The default Linux build config (defconfig) is different between archs. Hence a cross compiler is needed to build for a common target and common defconfig. Ultimately armhf does not have any cross compilers where as arm64 does have a armhf cross compiler. So the benchmark method is to build using native gcc on armhf and build using a armhf cross compiling gcc on an arm64, both using the same defconfig and both resulting in the same kernel image. As an aside its also important to use the same version of gcc for both benchmarks.
 
-To try to keep the test fair the same Raspberry Pi and hard drive needs to be used for all the tests. For both armhf and arm64 the systems were entirely Debian with the exception of the raspberrypi-bootloader and raspberrypi-kernel packages. The SD card would be /boot and the entire 5TB USB disk is /root.
+To try to keep the test fair the same Raspberry Pi and USB hard drive was used for all the tests. For both armhf and arm64 the systems were entirely Debian with the exception of the raspberrypi-bootloader and raspberrypi-kernel packages. The SD card would be /boot and the entire 5TB USB hard drive is /root.
 
 ### Install System
 The mechanism to build the raspberry pi disk images were copy and pasting shell commands.
@@ -370,3 +370,6 @@ The graphs were created using the amazing https://matplotlib.org/ using a small 
 The type of case configuraiton does not really effect overall speed.
 
 Assuming that we considar the ICE-Tower with fan number numbers, 64bit is 30% slower thatn 32bit.
+
+## Addendum
+
