@@ -151,36 +151,11 @@ sudo chroot ras apt-get install $(cat p | sort | uniq | xargs)
 sudo chroot deb apt-get install $(cat p | sort | uniq | egrep -v "gcc-4.9-base|gcc-5-base|gcc-6-base|libboost-iostreams1.58.0|libreadline6|libsigc|libudev0|raspbian-archive-keyring" | xargs)
 rm p
 
-sudo chroot deb dpkg -l | grep ^ii | awk '{print $2 " " $3}' > dpkg-l.deb.txt
-sudo chroot ras dpkg -l | grep ^ii | awk '{print $2 " " $3}' > dpkg-l.ras.txt
-
-sudo chroot deb dpkg -l | grep ^ii | awk '{print $2 " " $3}' | egrep -v "+rpi|+b" > dpkg-l.deb.txt
-sudo chroot ras dpkg -l | grep ^ii | awk '{print $2 " " $3}' | egrep -v "+rpi|+b" > dpkg-l.ras.txt
+sudo chroot deb dpkg -l | grep ^ii | awk '{print $2 " " $3}' > dpkg-l.deb.txt.p
+sudo chroot ras dpkg -l | grep ^ii | awk '{print $2 " " $3}' > dpkg-l.ras.txt.p
 
 sudo chroot deb apt-get clean
 sudo chroot ras apt-get clean
-
-
-cat << EOF | sudo tee deb/hello.c
-#include <stdio.h>
-int main(void) {
-    printf("Hello World");
-}
-EOF
-sudo cp -a deb/hello.c ras/hello.c
-
-sudo chroot deb gcc -o hello hello.c
-sudo chroot ras gcc -o hello hello.c
-
-objdump -d deb/hello > deb.txt
-objdump -d ras/hello > ras.txt
-
-sudo chroot deb gcc -v &> deb.gcc.txt
-sudo chroot ras gcc -v &> ras.gcc.txt
-
-sudo chroot deb gcc -v 2>&1 | sed 's/ /\n/g' | sort | grep -- -- > deb.gcc.txt
-sudo chroot ras gcc -v 2>&1 | sed 's/ /\n/g' | sort | grep -- -- > ras.gcc.txt
-
 
 sudo chroot deb su -c "wget https://github.com/torvalds/linux/archive/v5.4.tar.gz" - pi
 sudo cp deb/home/pi/v5.4.tar.gz ras/home/pi/v5.4.tar.gz
