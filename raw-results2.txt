@@ -1,0 +1,129 @@
+ICE-Tower Raspberry Pi 4 CPU Cooler with fan Debian
+
+pi@ras:~/linux-5.4 $ grep . result*  | grep -v WARNING
+result.1581610718:+ make -j 4 zImage
+result.1581610718:real	23m10.613s
+result.1581610718:user	78m30.822s
+result.1581610718:sys	10m11.843s
+result.1581610718:+ md5sum arch/arm/boot/zImage
+result.1581610718:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+result.1581612136:+ make -j 4 zImage
+result.1581612136:real	23m6.807s
+result.1581612136:user	78m40.902s
+result.1581612136:sys	10m10.032s
+result.1581612136:+ md5sum arch/arm/boot/zImage
+result.1581612136:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+result.1581613551:+ make -j 4 zImage
+result.1581613551:real	23m5.372s
+result.1581613551:user	78m34.135s
+result.1581613551:sys	10m15.847s
+result.1581613551:+ md5sum arch/arm/boot/zImage
+result.1581613551:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+result.1581614963:+ make -j 4 zImage
+result.1581614963:real	23m5.337s
+result.1581614963:user	78m33.507s
+result.1581614963:sys	10m15.105s
+result.1581614963:+ md5sum arch/arm/boot/zImage
+result.1581614963:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+result.1581616376:+ make -j 4 zImage
+result.1581616376:real	23m6.170s
+result.1581616376:user	78m39.916s
+result.1581616376:sys	10m15.131s
+result.1581616376:+ md5sum arch/arm/boot/zImage
+result.1581616376:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+result.1581617790:+ make -j 4 zImage
+result.1581617790:real	23m6.107s
+result.1581617790:user	78m40.284s
+result.1581617790:sys	10m15.432s
+result.1581617790:+ md5sum arch/arm/boot/zImage
+result.1581617790:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+result.1581619204:+ make -j 4 zImage
+result.1581619204:real	23m7.098s
+result.1581619204:user	78m40.761s
+result.1581619204:sys	10m13.474s
+result.1581619204:+ md5sum arch/arm/boot/zImage
+result.1581619204:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+result.1581620619:+ make -j 4 zImage
+result.1581620619:real	23m7.211s
+result.1581620619:user	78m40.434s
+result.1581620619:sys	10m14.964s
+result.1581620619:+ md5sum arch/arm/boot/zImage
+result.1581620619:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+result.1581622033:+ make -j 4 zImage
+result.1581622033:real	23m7.168s
+result.1581622033:user	78m38.593s
+result.1581622033:sys	10m16.117s
+result.1581622033:+ md5sum arch/arm/boot/zImage
+result.1581622033:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+result.1581623447:+ make -j 4 zImage
+result.1581623447:real	23m4.263s
+result.1581623447:user	78m41.564s
+result.1581623447:sys	10m10.457s
+result.1581623447:+ md5sum arch/arm/boot/zImage
+result.1581623447:0bfd17083e1be7b8d613e8fab7bd6a23  arch/arm/boot/zImage
+pi@ras:~/linux-5.4 $ 
+
+
+ICE-Tower Raspberry Pi 4 CPU Cooler with fan Debian
+pi@deb:~/linux-5.4$ grep . result*  | grep -v WARNING
+result.1582031458:+ make -j 4 zImage
+result.1582031458:real	20m34.594s
+result.1582031458:user	68m29.763s
+result.1582031458:sys	9m45.965s
+result.1582031458:+ md5sum arch/arm/boot/zImage
+result.1582031458:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+result.1582032719:+ make -j 4 zImage
+result.1582032719:real	20m31.159s
+result.1582032719:user	68m41.531s
+result.1582032719:sys	9m50.688s
+result.1582032719:+ md5sum arch/arm/boot/zImage
+result.1582032719:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+result.1582033977:+ make -j 4 zImage
+result.1582033977:real	20m29.733s
+result.1582033977:user	68m40.872s
+result.1582033977:sys	9m49.836s
+result.1582033977:+ md5sum arch/arm/boot/zImage
+result.1582033977:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+result.1582035233:+ make -j 4 zImage
+result.1582035233:real	20m30.855s
+result.1582035233:user	68m41.839s
+result.1582035233:sys	9m53.982s
+result.1582035233:+ md5sum arch/arm/boot/zImage
+result.1582035233:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+result.1582036490:+ make -j 4 zImage
+result.1582036490:real	20m30.834s
+result.1582036490:user	68m42.350s
+result.1582036490:sys	9m50.604s
+result.1582036490:+ md5sum arch/arm/boot/zImage
+result.1582036490:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+result.1582037748:+ make -j 4 zImage
+result.1582037748:real	20m30.456s
+result.1582037748:user	68m36.761s
+result.1582037748:sys	9m53.620s
+result.1582037748:+ md5sum arch/arm/boot/zImage
+result.1582037748:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+result.1582039004:+ make -j 4 zImage
+result.1582039004:real	20m31.374s
+result.1582039004:user	68m36.313s
+result.1582039004:sys	9m54.232s
+result.1582039004:+ md5sum arch/arm/boot/zImage
+result.1582039004:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+result.1582040263:+ make -j 4 zImage
+result.1582040263:real	20m29.973s
+result.1582040263:user	68m38.891s
+result.1582040263:sys	9m53.761s
+result.1582040263:+ md5sum arch/arm/boot/zImage
+result.1582040263:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+result.1582041519:+ make -j 4 zImage
+result.1582041519:real	20m28.104s
+result.1582041519:user	68m41.832s
+result.1582041519:sys	9m49.352s
+result.1582041519:+ md5sum arch/arm/boot/zImage
+result.1582041519:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+result.1582042774:+ make -j 4 zImage
+result.1582042774:real	20m30.161s
+result.1582042774:user	68m39.910s
+result.1582042774:sys	9m51.528s
+result.1582042774:+ md5sum arch/arm/boot/zImage
+result.1582042774:04a25419a0d491fcfba505f69399cb8e  arch/arm/boot/zImage
+pi@deb:~/linux-5.4$ 

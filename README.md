@@ -1,5 +1,5 @@
 # Raspberry Pi 4 Benchmarks
-# Table of contents
+## Table of contents
    * [Background](#background)
    * [Aim](#aim)
    * [Method](#method)
@@ -28,7 +28,7 @@ My main home server has been based on a Raspberry Pi for many years, starting wi
 My current setup is based on Debian running the armhf arch. It's entirely Debian with the exception of two Rasberry Pi packages: raspberrypi-bootloader and raspberrypi-kernel. While thinking about the reinstalation I starting thinking about running arm64.
 
 ## Aim
-Find out if Debian armhr/armv7l or Debian aarch64/arm64 (ie 32bit vs 64bit) performs better on Raspberry Pi 4 with a single external USB root filesystem (WD 5TB Elements Portable External Hard Drive, USB 3.0 https://www.amazon.co.uk/gp/product/B07X41PWTY/).
+Find out if Debian armhf/armv7l or Debian aarch64/arm64 (ie 32bit vs 64bit) performs better on Raspberry Pi 4 with a single external USB root filesystem (WD 5TB Elements Portable External Hard Drive, USB 3.0 https://www.amazon.co.uk/gp/product/B07X41PWTY/).
 
 ## Method
 Currently the server does a mix of: Nextlcoud, LAMP, IPv6 router, IPv6 Tunnel, SSH Jumphost and w1retap temperature logger. Ultimately I want these applications to perform the best. Benchmarks are hard and benchmarking all these applications would be hard. In addition simple CPU stress and I/O benchmarks would not represent real life. I wanted to find something that was more close to real life while at the same the be repeatable. Induvidual Apache, postgres and IP forwarding benchmarks would be possible, however I decided it would be far too time consuming. I wanted something that would stress the CPU, memory and Disk. Ultimately I decided to compile a Linux kernel, and the time taken to perform a full compile would be the benchmark.
@@ -200,7 +200,7 @@ $ sudo du -sh pi32 pi64
 ```
 
 ### Copying System to Media
-Both SD card and USB disk had new parition tables created and new blank empty filesystems created with apropreate lables so they would mount in consistant places. The following commands were used to copy the system to the media for the 32bit test.
+Both SD card and USB disk had new parition tables created and new blank empty filesystems created with apropreate lables so they would mount in consistant places. The following commands were used to copy the system to the media for the 32bit test:
 ```
 sudo rm -r -f /media/thomas/root/* /media/thomas/boot/*
 sudo rsync -cax --delete ./pi32/. /media/thomas/root/.
@@ -217,7 +217,7 @@ sudo umount /media/thomas/boot /media/thomas/root
 ```
 
 ### Software Versions
-The systems ran testing/unstable (bullseye/sid) and all software was up to date at the time of the test which was just after 16th December 2019). The versions of all the software were recorded via "dpkg -l" and saved into [dpkg-l.pi32.txt](dpkg-l.pi32.txt) and [dpkg-l.pi64.txt](dpkg-l.pi64.txt). The git ref for the Linux repo is 219d543 which is tagged v5.4.
+The systems ran testing/unstable (bullseye/sid) and all software was up to date at the time of the test which was just after 16th December 2019. The versions of all the software were recorded via "dpkg -l" and saved into [dpkg-l.pi32.txt](dpkg-l.pi32.txt) and [dpkg-l.pi64.txt](dpkg-l.pi64.txt). The git ref for the Linux repo is 219d543 which is tagged v5.4.
 
 
 ### Benchmark Scripts
