@@ -228,7 +228,7 @@ Later to update to the 64 bit system the following commands were used (note that
 sudo rsync -cax --delete ./ras/. /media/thomas/root/.
 sudo rsync -crptx --delete ./ras/boot/. /media/thomas/boot/.
 sudo umount /media/thomas/boot /media/thomas/root
-``
+```
 
 ### Software Versions
 The Debian systems ran buster and all software was up to date at the time of the test which was just after 2th February 2020. The versions of all the software were recorded via "dpkg -l" and saved into [dpkg-l.deb.txt](dpkg-l.deb.txt) and [dpkg-l.ras.txt](dpkg-l.ras.txt). The git ref for the Linux repo is 219d543 which is tagged v5.4.
