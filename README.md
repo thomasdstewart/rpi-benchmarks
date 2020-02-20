@@ -364,8 +364,8 @@ The graphs were created using the amazing https://matplotlib.org/ using a small 
 ![plot.png](plot.png)
 
 ## Conclusion
- . The type of case configuration does not really effect overall speed.
- . Assuming that we consider the ICE-Tower with fan benchmarks the 64bit is 30% slower than 32bit.
+ * The type of case configuration does not really effect overall speed.
+ * Assuming that we consider the ICE-Tower with fan benchmarks the 64bit is 30% slower than 32bit.
 
 ## Addendum
 Repeating the test in an ad-hoc manor on a Raspbian system proved far faster, so much so that I need to consider switching to Raspbian. However to prove so I needed to repeat the benchmarks in a more controller manor, eg same version of gcc etc. This will be done in [Raspbian.md](Raspbian.md).

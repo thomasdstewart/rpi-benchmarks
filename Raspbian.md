@@ -390,6 +390,8 @@ Disassembly of section .text:
 ```
 
 ## Conclusion
- . Debian apears to be 13% faster than Rasbian
- . Something drastic has changed between the previous test and this one as the previous best test was 85% slower
+ * Debian apears to be 13% faster than Rasbian
+ * Something drastic has changed between the previous test and this one as the previous best test was 85% slower. Either kernel version changes or other version changes.
 
+## Addendum]
+Repeating tests...
